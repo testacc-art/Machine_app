@@ -1,0 +1,114 @@
+﻿<Page
+    x:Class="Machine_APP.App_sys_config"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Machine_APP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        
+          <StackPanel Orientation="Vertical" Width="700">
+            <StackPanel Orientation="Vertical" Width="500" Height="30">
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="基本参数配置"  Width="200" FontSize="40" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left" ></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="配置编号"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="ConfigNo"  Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBox>
+                <TextBlock Text="参数名称"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="ConfigName"  Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left" IsReadOnly="True"></TextBox>
+            </StackPanel>
+          
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="参数类型"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="ConfigType" Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBox>
+                <TextBlock Text="机器编号"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="MachineCode1"  Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBox>
+            </StackPanel>
+          
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="系统设置表"  Width="200" FontSize="40" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+              
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="机器编号"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="MachineCode2" Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBox>
+                <TextBlock Text="货道数量"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="ChannelCount"  Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBox>
+            </StackPanel>
+         
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="货道层数"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="LayerRowCount"  Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBox>
+                <TextBlock Text="货道列数"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="LayerColumnCount" Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBox>
+            </StackPanel>
+           
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="请求地址"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="RequeryUrl"  Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBox>
+                <TextBlock Text="IC 卡密码"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="ICardPassword"  Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBox>
+            </StackPanel>
+          
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="机器地址"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="MachineAddress" Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBox>
+                <TextBlock Text="经度"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="Longitude"  Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBox>
+            </StackPanel>
+           
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="纬度"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="Latitude"  Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBox>
+                <TextBlock Text="广告有效目录"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="AdvertisementDirectory" Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="是否显示图片"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <CheckBox  Name="IsDisplayPic" Width="150" ></CheckBox>
+                <TextBlock Text="是否多选"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <CheckBox  Name="IsCheckBox" Width="150"></CheckBox>
+
+            </StackPanel>
+         
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="运行模式"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="RunMode" Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBox>
+                <TextBlock Text="管理员电话"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="AlertMobile" Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBox>
+
+            </StackPanel>
+         
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="管理员邮件"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="AlertEmail" Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBox>
+                <TextBlock Text="APP版本号"  Width="180" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+                <TextBox  Name="AppVersionID" Width="150" FontSize="25" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Right"></TextBox>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Height="30"></StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                <Button Name="but_save"  Width="50" Height="50" HorizontalAlignment="Left" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/PIC/checked.png"/>
+                    </Button.Background>
+                </Button>
+                <StackPanel Orientation="Horizontal" Width="100"></StackPanel>
+                <Button Name="but_cancel"   Width="50" Height="50"  HorizontalAlignment="Stretch" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/PIC/clear.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        
+       
+    </Grid>
+</Page>

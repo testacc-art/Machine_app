@@ -1,0 +1,167 @@
+﻿if exists (select 1
+            from  sysobjects
+           where  id = object_id('dbo.APP_SYS_CONFIG')
+            and   type = 'U')
+   drop table dbo.APP_SYS_CONFIG
+go
+
+/*==============================================================*/
+/* Table: APP_SYS_CONFIG                                        */
+/*==============================================================*/
+create table dbo.APP_SYS_CONFIG (
+   ConfigNo             nvarchar(50)         not null,--配置编号 
+   ConfigName           nvarchar(50)         null,-- 参数名称 
+   ConfigType           nvarchar(50)         null,--参数类型 
+   MachineCode          nvarchar(50)         null,--机器编号
+   constraint PK_APP_SYS_CONFIG primary key (ConfigNo)
+)
+go
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('dbo.APP_SYS_SETTING')
+            and   type = 'U')
+   drop table dbo.APP_SYS_SETTING
+go
+
+/*==============================================================*/
+/* Table: APP_SYS_SETTING                                       */
+/*==============================================================*/
+create table dbo.APP_SYS_SETTING (
+   MachineCode          nvarchar(50)         not null,
+   ChannelCount         int                  null,
+   LayerRowCount        int                  null,
+   LayerColumnCount     int                  null,
+   RequeryUrl           nvarchar(300)        null,
+   ICardPassword        nvarchar(20)         null,
+   MachineAddress       nvarchar(500)        null,
+   Longitude            float                null,
+   Latitude             float                null,
+   AdvertisementDirectory nvarchar(300)        null,
+   IsDisplayPic         int                  null,
+   IsCheckBox           int                  null,
+   RunMode              int                  null,
+   Creator              nvarchar(50)         null,
+   CreateTime           datetime             null,
+   Modifier             nvarchar(50)         null,
+   ModifyDate           datetime             null,
+   AlertMobile          nvarchar(25)         null,
+   AlertEmail           nvarchar(50)         null,
+   AppVersionID         nvarchar(50)         null,
+   constraint PK_APP_SYS_SETTING primary key (MachineCode)
+)
+go
+
+
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('dbo.APP_PAY_DETAILS')
+            and   type = 'U')
+   drop table dbo.APP_PAY_DETAILS
+go
+
+/*==============================================================*/
+/* Table: APP_PAY_DETAILS                                       */
+/*==============================================================*/
+create table dbo.APP_PAY_DETAILS (
+   PayDetailNo          nvarchar(50)         not null,
+   PayNo                nvarchar(50)         null,
+   MachineCode          nvarchar(50)         null,
+   ChannelCode          nvarchar(50)         null,
+   ProductCode          nvarchar(50)         null,
+   ProductName          nvarchar(50)         null,
+   PictureUrl           nvarchar(250)        null,
+   IsPayComplated       int                  null,
+   PayAmount            decimal(18,2)        null,
+   Amount               decimal(18,2)        null,
+   IsOutStatus          int                  null,
+   UnitPrice            decimal(18,2)        null,
+   OutNum               int                  null,
+   FinishOutNum         int                  null,
+   ReturnAmount         decimal(18,2)        null,
+   OutDetailNum         int                  null,
+   OutDetailDate        datetime             null,
+   OutDetailAuditor     nvarchar(50)         null,
+   AuditRefundAmount    decimal(18,2)        null,
+   Creator              varchar(50)          collate Chinese_PRC_CI_AS null,
+   CreateDate           datetime             null,
+   Modifier             nvarchar(50)         collate Chinese_PRC_CI_AS null,
+   ModifyDate           datetime             null,
+   constraint PK_APP_PAY_DETAILS primary key (PayDetailNo)
+)
+go
+
+
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('dbo.APP_PAY_RECORD')
+            and   type = 'U')
+   drop table dbo.APP_PAY_RECORD
+go
+
+/*==============================================================*/
+/* Table: APP_PAY_RECORD                                        */
+/*==============================================================*/
+create table dbo.APP_PAY_RECORD (
+   PayNo                nvarchar(50)         collate Chinese_PRC_CI_AS not null,
+   PayUserID            nvarchar(50)         collate Chinese_PRC_CI_AS null,
+   ChannelCode          nvarchar(50)         collate Chinese_PRC_CI_AS null,
+   MachineCode          nvarchar(50)         collate Chinese_PRC_CI_AS null,
+   IsPayComplated       int                  null,
+   PayType              nvarchar(50)         collate Chinese_PRC_CI_AS null,
+   PayAccount           nvarchar(100)        collate Chinese_PRC_CI_AS null,
+   PayAmount            decimal(18,2)        null,
+   IsFinishSale         int                  null,
+   OutSaleNum           int                  null,
+   ReturnAmount         decimal(18,2)        null,
+   FinishReturnAmount   decimal(18,2)        null,
+   ReturnNum            decimal(18,2)        null,
+   CashAmount           decimal(18,2)        null,
+   ChangeAmount         decimal(18,2)        null,
+   CashGenerateStatus   int                  null,
+   CashCode             nvarchar(50)         collate Chinese_PRC_CI_AS null,
+   Creator              varchar(50)          collate Chinese_PRC_CI_AS null,
+   CreateDate           datetime             null,
+   Modifier             nvarchar(50)         collate Chinese_PRC_CI_AS null,
+   ModifyDate           datetime             null,
+   constraint PK_APP_PAY_RECORD primary key (PayNo)
+)
+go
+
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('dbo.APP_PRODUCT')
+            and   type = 'U')
+   drop table dbo.APP_PRODUCT
+go
+
+/*==============================================================*/
+/* Table: APP_PRODUCT                                           */
+/*==============================================================*/
+create table dbo.APP_PRODUCT (
+   ChannelCode          nvarchar(50)         not null,
+   MachineType          int                  null,
+   MachineCode          nvarchar(50)         not null,
+   ProductName          nvarchar(50)         null,
+   Price                float                null,
+   DiscountPrice        float                null,
+   DiscountDate         nvarchar(25)         null,
+   XFlag                float                null,
+   YFlag                float                null,
+   ChannelStatus        int                  null,
+   PictureUrl           nvarchar(300)        null,
+   ChannelLength        float                null,
+   ChannelWidth         float                null,
+   ChannelType          int                  null,
+   ProductNum           float                null,
+   CapacityNum          float                null,
+   IsDisable            int                  null,
+   Creator              nvarchar(50)         null,
+   CreateDate           datetime             null,
+   Modifier             nvarchar(50)         null,
+   ModifyDate           datetime             null,
+   constraint PK_APP_PRODUCT primary key (ChannelCode, MachineCode)
+)
+go

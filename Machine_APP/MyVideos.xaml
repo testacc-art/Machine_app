@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Machine_APP.MyVideos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Machine_APP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"  Height="830" Width="768">
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="PIC/home_btn_bg_n.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="35*"/>
+
+        </Grid.RowDefinitions>
+        <Image Source="PIC/homev.png"  Grid.Row="0"  MaxWidth="200" MaxHeight="200" Margin="0,0,528,0"/>
+        <Image Source="PIC/about_us.png"  Grid.Row="0"  MaxWidth="200" MaxHeight="200" Margin="300,0,0,0"/>
+        <MediaElement Grid.Row="1"  x:Name="mediaElement" Height="745" VerticalAlignment="Top" HorizontalAlignment="Center" Width="748" Source="PIC/mv.mp4" Margin="10,9.667,10,0"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{62D52201-EF01-46C7-94AF-8BF3BBD872F5}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Machine_APP</RootNamespace>
+    <AssemblyName>Machine_APP</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Machine_APP_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <RuntimeIdentifiers>win10-arm;win10-arm-aot;win10-x86;win10-x86-aot;win10-x64;win10-x64-aot</RuntimeIdentifiers>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="system.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App_sys_config.xaml.cs">
+      <DependentUpon>App_sys_config.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BuyMain.xaml.cs">
+      <DependentUpon>BuyMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CarMain.xaml.cs">
+      <DependentUpon>CarMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="dal\app_Interface.cs" />
+    <Compile Include="dal\APP_PRODUCT_DAL.cs" />
+    <Compile Include="dal\CreateDBTable.cs" />
+    <Compile Include="dal\DBhelp.cs" />
+    <Compile Include="dal\PAY_DETAILS_DAL.cs" />
+    <Compile Include="dal\PAY_RECORD_DAL.cs" />
+    <Compile Include="dal\QRCodeHelper.cs" />
+    <Compile Include="dal\SYS_CONFIG_DAL.cs" />
+    <Compile Include="dal\SYS_SETTING_DAL.cs" />
+    <Compile Include="FINISHOUT_DETAILS.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyPay.xaml.cs">
+      <DependentUpon>MyPay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyVideos.xaml.cs">
+      <DependentUpon>MyVideos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PAY_DETAILS.cs" />
+    <Compile Include="pay_info.cs" />
+    <Compile Include="pay_infor_detail.cs" />
+    <Compile Include="PAY_RECORD.cs" />
+    <Compile Include="PRODUCT.cs" />
+    <Compile Include="ProductEdit.xaml.cs">
+      <DependentUpon>ProductEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProductEditbysingle.xaml.cs">
+      <DependentUpon>ProductEditbysingle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_CONFIG.cs" />
+    <Compile Include="SYS_SETTING.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="MyCar.xaml.cs">
+      <DependentUpon>MyCar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Machine_APP_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PIC\1.jpg" />
+    <Content Include="PIC\2.jpg" />
+    <Content Include="PIC\3.jpg" />
+    <Content Include="PIC\4.jpg" />
+    <Content Include="PIC\5.jpg" />
+    <Content Include="PIC\about_us.png" />
+    <Content Include="PIC\add.png" />
+    <Content Include="PIC\alipay.png" />
+    <Content Include="PIC\backup.png" />
+    <Content Include="PIC\backv2.png" />
+    <Content Include="PIC\bj.jpg" />
+    <Content Include="PIC\cardrecharge.png" />
+    <Content Include="PIC\checked.png" />
+    <Content Include="PIC\checkreport.png" />
+    <Content Include="PIC\chooes6.png" />
+    <Content Include="PIC\choose1.png" />
+    <Content Include="PIC\choose2.png" />
+    <Content Include="PIC\choose4.png" />
+    <Content Include="PIC\cjsc.png" />
+    <Content Include="PIC\clear.png" />
+    <Content Include="PIC\clickbuy.png" />
+    <Content Include="PIC\clickbuy2.png" />
+    <Content Include="PIC\default_bg2.png" />
+    <Content Include="PIC\doulei_1.jpg" />
+    <Content Include="PIC\doulei_2.jpg" />
+    <Content Include="PIC\gallery_radio_off.png" />
+    <Content Include="PIC\gallery_radio_on.png" />
+    <Content Include="PIC\genjin_1.jpg" />
+    <Content Include="PIC\genjin_2.jpg" />
+    <Content Include="PIC\genjin_3.jpg" />
+    <Content Include="PIC\genjin_4.jpg" />
+    <Content Include="PIC\genjin_5.jpg" />
+    <Content Include="PIC\genjin_6.jpg" />
+    <Content Include="PIC\genjin_7.jpg" />
+    <Content Include="PIC\go_buy.png" />
+    <Content Include="PIC\guaguo_1.jpg" />
+    <Content Include="PIC\guaguo_10.jpg" />
+    <Content Include="PIC\guaguo_2.jpg" />
+    <Content Include="PIC\guaguo_3.jpg" />
+    <Content Include="PIC\guaguo_4.jpg" />
+    <Content Include="PIC\guaguo_5.jpg" />
+    <Content Include="PIC\guaguo_6.jpg" />
+    <Content Include="PIC\guaguo_7.jpg" />
+    <Content Include="PIC\guaguo_8.jpg" />
+    <Content Include="PIC\guaguo_9.jpg" />
+    <Content Include="PIC\helper.png" />
+    <Content Include="PIC\helperv.png" />
+    <Content Include="PIC\helppay.png" />
+    <Content Include="PIC\home.png" />
+    <Content Include="PIC\homebuy.png" />
+    <Content Include="PIC\homebuy2.png" />
+    <Content Include="PIC\homev.png" />
+    <Content Include="PIC\home_btn_bg_d.png" />
+    <Content Include="PIC\home_btn_bg_d1.png" />
+    <Content Include="PIC\home_btn_bg_n.png" />
+    <Content Include="PIC\home_btn_bg_s.png" />
+    <Content Include="PIC\home_iccard_back.png" />
+    <Content Include="PIC\huacai_1.jpg" />
+    <Content Include="PIC\ic-previous.png" />
+    <Content Include="PIC\ic-right.png" />
+    <Content Include="PIC\iccard.png" />
+    <Content Include="PIC\iccardgive.png" />
+    <Content Include="PIC\iccardnew.png" />
+    <Content Include="PIC\iccardv.png" />
+    <Content Include="PIC\iccard_tb.png" />
+    <Content Include="PIC\icon.png" />
+    <Content Include="PIC\ic_card_back.png" />
+    <Content Include="PIC\ic_launcher_foreground.xml" />
+    <Content Include="PIC\ic_launcher_round.png" />
+    <Content Include="PIC\left1.png" />
+    <Content Include="PIC\liucheng.png" />
+    <Content Include="PIC\ljt.png" />
+    <Content Include="PIC\log.png" />
+    <Content Include="PIC\login_pwd.png" />
+    <Content Include="PIC\login_user.png" />
+    <Content Include="PIC\logo.png" />
+    <Content Include="PIC\logoapp.png" />
+    <Content Include="PIC\logrecord.png" />
+    <Content Include="PIC\maintab_toolbar_bg.png" />
+    <Content Include="PIC\max_wifi.png" />
+    <Content Include="PIC\minus.png" />
+    <Content Include="PIC\mv.mp4" />
+    <Content Include="PIC\ncbg.jpg" />
+    <Content Include="PIC\netx_page.png" />
+    <Content Include="PIC\new.jpg" />
+    <Content Include="PIC\normal.png" />
+    <Content Include="PIC\no_1.png" />
+    <Content Include="PIC\no_2.png" />
+    <Content Include="PIC\no_3.png" />
+    <Content Include="PIC\no_4.png" />
+    <Content Include="PIC\no_new_1.png" />
+    <Content Include="PIC\no_new_2.png" />
+    <Content Include="PIC\no_new_3.png" />
+    <Content Include="PIC\no_new_4.png" />
+    <Content Include="PIC\no_wifi.png" />
+    <Content Include="PIC\one_wifi.png" />
+    <Content Include="PIC\pay.jpg" />
+    <Content Include="PIC\pressure.png" />
+    <Content Include="PIC\right2.png" />
+    <Content Include="PIC\setadd.png" />
+    <Content Include="PIC\setbackup.png" />
+    <Content Include="PIC\setcard.png" />
+    <Content Include="PIC\setdownload.png" />
+    <Content Include="PIC\setflag.png" />
+    <Content Include="PIC\setmachine.png" />
+    <Content Include="PIC\setport.png" />
+    <Content Include="PIC\setproduct.png" />
+    <Content Include="PIC\setset.png" />
+    <Content Include="PIC\setsync.png" />
+    <Content Include="PIC\setting.png" />
+    <Content Include="PIC\settingv.png" />
+    <Content Include="PIC\shoppingcart.png" />
+    <Content Include="PIC\shucai.png" />
+    <Content Include="PIC\star.png" />
+    <Content Include="PIC\stress_test.png" />
+    <Content Include="PIC\sym_keyboard_delete.png" />
+    <Content Include="PIC\sysrestore.png" />
+    <Content Include="PIC\systemupdate.png" />
+    <Content Include="PIC\three_wifi.png" />
+    <Content Include="PIC\timg.jpg" />
+    <Content Include="PIC\top_page.png" />
+    <Content Include="PIC\trash.png" />
+    <Content Include="PIC\tubiao.png" />
+    <Content Include="PIC\two_wifi.png" />
+    <Content Include="PIC\update.png" />
+    <Content Include="PIC\video.png" />
+    <Content Include="PIC\weixin.png" />
+    <Content Include="PIC\weixin1.png" />
+    <Content Include="PIC\weixinliucheng.png" />
+    <Content Include="PIC\weixinpay.png" />
+    <Content Include="PIC\wx.jpg" />
+    <Content Include="PIC\wx_2wm.png" />
+    <Content Include="PIC\yecai_baijian_1.jpg" />
+    <Content Include="PIC\yecai_baocai_1.jpg" />
+    <Content Include="PIC\yecai_daqing_1.jpg" />
+    <Content Include="PIC\yecai_digua_1.jpg" />
+    <Content Include="PIC\yecai_jielan_1.jpg" />
+    <Content Include="PIC\yecai_kongxin_1.jpg" />
+    <Content Include="PIC\yecai_shanghaiqing_1.jpg" />
+    <Content Include="PIC\yecai_shengcai_1.jpg" />
+    <Content Include="PIC\yecai_wawa_1.jpg" />
+    <Content Include="PIC\yecai_youmai_1.jpg" />
+    <Content Include="PIC\zfb.jpg" />
+    <Content Include="PIC\zfb_2wm.png" />
+    <Content Include="PIC\zhifubao.png" />
+    <Content Include="PIC\zhifubao1.png" />
+    <Content Include="PIC\zhifubaoliuceng.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="readme\Readme.txt" />
+    <Content Include="readme\SQL.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="App_sys_config.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BuyMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CarMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MyCar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyPay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyVideos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductEditbysingle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="SQLite.UWP.2015, Version=3.33.0">
+      <Name>SQLite for Universal Windows Platform</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.10</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="QRCoder">
+      <Version>1.3.9</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCL">
+      <Version>3.8.7.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

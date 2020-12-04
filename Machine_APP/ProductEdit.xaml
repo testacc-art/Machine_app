@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="Machine_APP.ProductEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Machine_APP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="95*"/>
+        </Grid.RowDefinitions>
+        <Grid Name="grid_2" Grid.Row="0" >
+            <Button Name="but_new"  Width="50" Height="50" HorizontalAlignment="right" Click="but_new_Click"  >
+                <Button.Background>
+                    <ImageBrush ImageSource="/PIC/new.jpg"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Grid Name="grid_1" Grid.Row="1" >
+            <GridView ItemsSource="{x:Bind PRODUCTs}" Margin="0,50,0,0" Name="GridView1">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="local:PRODUCT">
+                        <Border  BorderBrush="AntiqueWhite" BorderThickness="5" Width="720" >
+                            <StackPanel Orientation="Horizontal" Width="700" HorizontalAlignment="Left" >
+                                <TextBlock FontSize="24" Width="150" Text="{x:Bind ChannelCode1}" VerticalAlignment="Center" Visibility="Collapsed" />
+                                <TextBlock FontSize="24" Width="150" Text="{x:Bind MachineCode1}" VerticalAlignment="Center" Visibility="Collapsed" />
+                                <TextBox FontSize="24" Width="250" Text="{x:Bind ProductName1}" VerticalAlignment="Center"/>
+                                <TextBox FontSize="24" Width="150" Text="{x:Bind Price1}" VerticalAlignment="Center"/>
+                                <TextBox Width="150" FontSize="24"  Text="{x:Bind ProductNum1}" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"/>
+                                <Button Name="but_sub"   Width="50" Height="50"  HorizontalAlignment="Right" Click="but_sub_Click" >
+                                    <Button.Background>
+                                        <ImageBrush Stretch="Fill" ImageSource="PIC/checked.png"/>
+                                    </Button.Background>
+                                </Button>
+                                <Button   Width="50" Height="50"  HorizontalAlignment="Right" Name="but_edit" Click="but_edit_Click">
+                                    <Button.Background>
+                                        <ImageBrush Stretch="Fill" ImageSource="PIC/update.png"/>
+                                    </Button.Background>
+                                </Button>
+                                <Button  Name="but_clear"  Width="50" Height="50"  HorizontalAlignment="Right"  Click="but_clear_Click">
+                                    <Button.Background>
+                                        <ImageBrush Stretch="Fill" ImageSource="PIC/clear.png"/>
+                                    </Button.Background>
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
+
+    </Grid>
+   
+</Page>

@@ -1,0 +1,321 @@
+﻿<Page
+    x:Class="Machine_APP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Machine_APP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="830" Width="768" >
+    <Page.Foreground>
+        <ImageBrush Stretch="Fill" />
+    </Page.Foreground>
+
+    <Grid Margin="10,0,10,10">
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="PIC/home_btn_bg_n.png"/>
+        </Grid.Background>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="12*"/>
+        </Grid.ColumnDefinitions>-->
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Image Source="PIC/homev.png"  Grid.Row="0"  MaxWidth="200" MaxHeight="200" Margin="0,0,528,0"/>
+        <Image Source="PIC/about_us.png"  Grid.Row="0"  MaxWidth="200" MaxHeight="200" Margin="300,0,0,0"/>
+        <Grid  Grid.Row="1" Name="grid_1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35*"/>
+                <ColumnDefinition Width="35*"/>
+                <ColumnDefinition Width="35*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Grid.Row="0" Grid.Column="0"-->
+            <Viewbox Grid.Row="0"  Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb1_1">
+                <Image Source="PIC/guaguo_4.jpg"/>
+            </Viewbox>
+            <Viewbox  Grid.Row="0"  Grid.Column="1" MaxWidth="200" MaxHeight="200" Margin="6" Name="vb1_2">
+                <Image Source="PIC/genjin_1.jpg"/>
+            </Viewbox>
+            <Viewbox  Grid.Row="0"  Grid.Column="2" MaxWidth="200" MaxHeight="200" Name="vb1_3">
+                <Image Source="PIC/doulei_2.jpg"/>
+            </Viewbox>
+
+            <StackPanel Name="sp_1_1" Grid.Row="1" Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+                <Button Name="min_1_1"  Width="50" Height="50" Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox Name="txt_1_1"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button Name="add_1_1"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+
+            </StackPanel>
+
+            <StackPanel Name="sp_1_2" Grid.Row="1" Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_1_2"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_1_2"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+                <Button Name="add_1_2"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel Name="sp_1_3" Grid.Row="1" Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_1_3"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_1_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_1_3"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+
+
+            </StackPanel>
+
+
+
+            <Viewbox  Grid.Row="2"  Grid.Column="0" MaxWidth="200" MaxHeight="200" Margin="6" Name="vb2_1">
+                <Image Source="PIC/genjin_2.jpg"/>
+            </Viewbox>
+            <Viewbox Grid.Row="2"  Grid.Column="1"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb2_2">
+                <Image Source="PIC/genjin_3.jpg"/>
+            </Viewbox>
+            <Viewbox  Grid.Row="2"  Grid.Column="2" MaxWidth="200" MaxHeight="200" Name="vb2_3">
+                <Image Source="PIC/genjin_4.jpg"/>
+            </Viewbox>
+
+
+            <StackPanel Name="sp_2_1" Grid.Row="3" Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_2_1"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_2_1"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_2_1"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+
+            </StackPanel>
+
+            <StackPanel Name="sp_2_2" Grid.Row="3" Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_2_2"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_2_2"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_2_2"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Name="sp_2_3" Grid.Row="3" Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_2_3"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_2_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_2_3"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+
+
+            </StackPanel>
+
+            <Viewbox Grid.Row="4" Grid.Column="0" MaxWidth="200" MaxHeight="200" Margin="6" Name="vb3_1">
+                <Image Source="PIC/genjin_6.jpg"/>
+            </Viewbox>
+            <Viewbox Grid.Row="4" Grid.Column="1" MaxWidth="200" MaxHeight="200" Margin="6" Name="vb3_2">
+                <Image Source="PIC/genjin_7.jpg"/>
+            </Viewbox>
+            <Viewbox  Grid.Row="4" Grid.Column="2" MaxWidth="200" MaxHeight="200" Name="vb3_3">
+                <Image Source="PIC/guaguo_1.jpg"/>
+            </Viewbox>
+
+
+            <StackPanel Name="sp_3_1" Grid.Row="5" Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_3_1"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_3_1"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_3_1"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+
+            </StackPanel>
+
+            <StackPanel  Name="sp_3_2" Grid.Row="5" Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_3_2"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_3_2"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_3_2"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel  Name="sp_3_3" Grid.Row="5" Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_3_3"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_3_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_3_3"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+
+
+            </StackPanel>
+
+            <Viewbox Grid.Row="6" Grid.Column="0" MaxWidth="200" MaxHeight="200" Margin="6" Name="vb4_1">
+                <Image Source="PIC/guaguo_6.jpg"/>
+            </Viewbox>
+            <Viewbox Grid.Row="6" Grid.Column="1" MaxWidth="200" MaxHeight="200" Margin="6" Name="vb4_2">
+                <Image Source="PIC/guaguo_10.jpg"/>
+            </Viewbox>
+            <Viewbox Grid.Row="6" Grid.Column="2" MaxWidth="200" MaxHeight="200" Name="vb4_3">
+                <Image Source="PIC/guaguo_7.jpg"/>
+            </Viewbox>
+
+
+            <StackPanel Name="sp_4_1"  Grid.Row="7" Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_4_1"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_4_1"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_4_1"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+
+            </StackPanel>
+
+            <StackPanel  Name="sp_4_2"  Grid.Row="7" Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_4_2"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_4_2"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_4_2"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel  Name="sp_4_3"  Grid.Row="7" Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal" >
+
+                <Button Name="min_4_3"  Width="50" Height="50"  Click="min_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBox Name="txt_4_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True"/>
+                <Button Name="add_4_3"  Width="50" Height="50" Click="add_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+
+
+
+            </StackPanel>
+
+        </Grid>
+
+        <Button Name="but_car"   Grid.Row="2"  MaxWidth="200" MaxHeight="200" Height="93" Click="but_car_Click" Margin="10,0.333,603,2" HorizontalAlignment="Stretch">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="PIC/shoppingcart.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="but_next"  Grid.Row="2"   HorizontalAlignment="Right" VerticalAlignment="Top" Height="105" Width="173" Click="but_next_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="PIC/clickbuy2.png"/>
+            </Button.Background>
+        </Button>
+
+        <!--<Button Name="but_next"   Grid.Row="2"  MaxWidth="200" MaxHeight="200" Width="153" Height="93" Click="" Margin="585,12,0,13">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="PIC/clickbuy2.png"/>
+            </Button.Background>
+        </Button>-->
+        <!--<Image Source="PIC/ic-right.png"  Grid.Row="2"  MaxWidth="200" MaxHeight="200" Margin="0,0,528,0"/>-->
+        <!--<Image Source="PIC/shoppingcart.png"  Grid.Row="2"  MaxWidth="200" MaxHeight="200" Margin="630,0.5,10,-1"/>-->
+
+    </Grid>
+</Page>
+    
+    

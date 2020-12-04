@@ -1,0 +1,443 @@
+﻿<Page
+    x:Class="Machine_APP.MyCar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Machine_APP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"   Height="830" Width="768" Background="#FFE4E4E4">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="3*"/>
+
+        </Grid.RowDefinitions>
+
+        <Image Source="PIC/homev.png"  Grid.Row="0"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="0,0,528,0"/>
+        <Image Source="PIC/about_us.png"  Grid.Row="0"  Grid.Column="0"   MaxWidth="200" MaxHeight="200" Margin="300,0,0,0"/>
+        <Grid x:ConnectionId='2'  Grid.Row="1" Name="grid_1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="35*"/>
+                <ColumnDefinition Width="35*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <StackPanel x:ConnectionId='4' Name="sp_1_1" Grid.Row="0" Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"   >
+                <Viewbox x:ConnectionId='111' Grid.Row="0"  Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_1_1">
+                    <Image Source="PIC/guaguo_4.jpg" />
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='5' Name="sp_1_2" Grid.Row="0" Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='110' x:Name="txt_1_2" TextWrapping="Wrap" Text="productname1" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='6' Name="sp_1_3" Grid.Row="0" Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='106' Name="min_1_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"  />
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='107' Name="txt_1_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='108' Name="add_1_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='109' Name="del_1_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='7' Name="sp_2_1" Grid.Row="1" Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='105' Grid.Row="1"  Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_2_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='8' Name="sp_2_2" Grid.Row="1" Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='104' x:Name="txt_2_2" TextWrapping="Wrap" Text="productname2" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='9' Name="sp_2_3" Grid.Row="1" Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='100' Name="min_2_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='101' Name="txt_2_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='102' Name="add_2_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='103' Name="del_2_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='10' Name="sp_3_1" Grid.Row="2" Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='99' Grid.Row="2"  Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_3_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='11' Name="sp_3_2" Grid.Row="2" Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='98' x:Name="txt_3_2" TextWrapping="Wrap" Text="productname3" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='12' Name="sp_3_3" Grid.Row="2" Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='94' Name="min_3_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='95' Name="txt_3_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='96' Name="add_3_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='97' Name="del_3_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+
+
+
+            <StackPanel x:ConnectionId='13' Name="sp_4_1"  Grid.Row="3"  Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='93'  Grid.Row="3"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_4_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='14' Name="sp_4_2"  Grid.Row="3"  Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='92' x:Name="txt_4_2" TextWrapping="Wrap" Text="productname4" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='15' Name="sp_4_3"  Grid.Row="3"  Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='88' Name="min_4_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='89' Name="txt_4_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='90' Name="add_4_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='91' Name="del_4_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+
+
+            <StackPanel x:ConnectionId='16' Name="sp_5_1"  Grid.Row="4"  Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='87'  Grid.Row="4"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_5_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='17' Name="sp_5_2"  Grid.Row="4"  Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='86' x:Name="txt_5_2" TextWrapping="Wrap" Text="productname5" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='18' Name="sp_5_3"  Grid.Row="4"  Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='82' Name="min_5_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='83' Name="txt_5_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='84' Name="add_5_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='85' Name="del_5_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+
+
+            <StackPanel x:ConnectionId='19' Name="sp_6_1"  Grid.Row="5"  Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='81'  Grid.Row="5"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_6_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='20' Name="sp_6_2"  Grid.Row="5"  Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='80' x:Name="txt_6_2" TextWrapping="Wrap" Text="productname6" VerticalAlignment="Bottom" FontSize="36" Margin="0,0,0,12.333" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='21' Name="sp_6_3"  Grid.Row="5"  Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='76' Name="min_6_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='77' Name="txt_6_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='78' Name="add_6_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='79' Name="del_6_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+
+
+
+
+            <StackPanel x:ConnectionId='22' Name="sp_7_1"  Grid.Row="6"  Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='75'  Grid.Row="6"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_7_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='23' Name="sp_7_2"  Grid.Row="6"  Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='74' x:Name="txt_7_2" TextWrapping="Wrap" Text="productname7" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='24' Name="sp_7_3"  Grid.Row="6"  Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='70' Name="min_7_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='71' Name="txt_7_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='72' Name="add_7_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='73' Name="del_7_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+
+
+            <StackPanel x:ConnectionId='25' Name="sp_8_1"  Grid.Row="7"  Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='69'  Grid.Row="7"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_8_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='26' Name="sp_8_2"  Grid.Row="7"  Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='68' x:Name="txt_8_2" TextWrapping="Wrap" Text="productname8" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='27' Name="sp_8_3"  Grid.Row="7"  Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='64' Name="min_8_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='65' Name="txt_8_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='66' Name="add_8_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='67' Name="del_8_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+
+
+
+
+            <StackPanel x:ConnectionId='28' Name="sp_9_1"  Grid.Row="8"  Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='63'  Grid.Row="8"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_9_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='29' Name="sp_9_2"  Grid.Row="8"  Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='62' x:Name="txt_9_2" TextWrapping="Wrap" Text="productname9" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='30' Name="sp_9_3"  Grid.Row="8"  Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='58' Name="min_9_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='59' Name="txt_9_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='60' Name="add_9_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='61' Name="del_9_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+
+
+
+
+
+            <StackPanel x:ConnectionId='31' Name="sp_10_1"  Grid.Row="9"  Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='57'  Grid.Row="9"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_10_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='32' Name="sp_10_2"  Grid.Row="9"  Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='56' x:Name="txt_10_2" TextWrapping="Wrap" Text="productname10" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='33' Name="sp_10_3"  Grid.Row="9"  Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='52' Name="min_10_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='53' Name="txt_10_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='54' Name="add_10_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='55' Name="del_10_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+
+
+            <StackPanel x:ConnectionId='34' Name="sp_11_1"  Grid.Row="10"  Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='51'  Grid.Row="9"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_11_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='35' Name="sp_11_2"  Grid.Row="10"  Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='50' x:Name="txt_11_2" TextWrapping="Wrap" Text="productname11" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+            <StackPanel x:ConnectionId='36' Name="sp_11_3"  Grid.Row="10"  Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='46' Name="min_11_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='47' Name="txt_11_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='48' Name="add_11_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='49' Name="del_11_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+
+
+
+
+
+            <StackPanel x:ConnectionId='37' Name="sp_12_1"  Grid.Row="11"  Grid.Column="0"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <Viewbox x:ConnectionId='45'  Grid.Row="9"   Grid.Column="0"  MaxWidth="200" MaxHeight="200" Margin="6" Name="vb_12_1">
+                    <Image Source="PIC/guaguo_3.jpg"/>
+                </Viewbox>
+            </StackPanel>
+            <StackPanel x:ConnectionId='38' Name="sp_12_2"  Grid.Row="11"  Grid.Column="1"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed" >
+                <TextBlock x:ConnectionId='44' x:Name="txt_12_2" TextWrapping="Wrap" Text="productname12" VerticalAlignment="Center" FontSize="36" />
+
+            </StackPanel>
+
+
+
+            <StackPanel x:ConnectionId='39' Name="sp_12_3"  Grid.Row="11"  Grid.Column="2"  Margin="3,3,3,0" Height="73" VerticalAlignment="Center"  Orientation="Horizontal"  Visibility="Collapsed"  HorizontalAlignment="Right">
+                <Button x:ConnectionId='40' Name="min_12_3"  Width="50" Height="50"                    >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
+                    </Button.Background>
+                </Button>
+
+                <TextBox x:ConnectionId='41' Name="txt_12_3"  Text="0" Width="130" TextAlignment="Center"  VerticalAlignment="Center" IsReadOnly="True" />
+
+                <Button x:ConnectionId='42' Name="add_12_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:ConnectionId='43' Name="del_12_3"  Width="50" Height="50"                   >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="PIC/trash.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Button x:ConnectionId='3' x:Name="but_next"  Grid.Row="2"  HorizontalAlignment="Right" VerticalAlignment="Top" Height="65" Width="173"                        Margin="0,9.667,0,0">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="PIC/clickbuy2.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+
+</Page>
+
