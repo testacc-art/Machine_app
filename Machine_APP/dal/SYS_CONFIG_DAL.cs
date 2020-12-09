@@ -15,7 +15,7 @@ namespace Machine_APP.dal
             try
             {
                 List<SYS_CONFIG> configs = new List<SYS_CONFIG>();
-                string sqlbing = @"SELECT * FROM SYS_CONFIG";
+                string sqlbing = @"SELECT * FROM APP_SYS_CONFIG";
                 SYS_CONFIG p = db.getsinglesysconfig(sqlbing);
                 configs.Add(p);
 

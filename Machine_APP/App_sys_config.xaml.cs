@@ -28,8 +28,8 @@ namespace Machine_APP
         public ObservableCollection<SYS_SETTING> sseets { get; } = new ObservableCollection<SYS_SETTING>();
         public App_sys_config()
         {
-            APP_PRODUCT_DAL pdal = new APP_PRODUCT_DAL();
-            List<PRODUCT> plist = pdal.getlist();
+            SYS_CONFIG_DAL pdal = new SYS_CONFIG_DAL();
+            List<SYS_CONFIG> plist = pdal.getlist();
             foreach (var item in plist)
             {
               

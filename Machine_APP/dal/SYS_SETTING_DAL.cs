@@ -16,7 +16,7 @@ namespace Machine_APP.dal
             try
             {
                 List<SYS_SETTING> configs = new List<SYS_SETTING>();
-                string sqlbing = @"SELECT * FROM SYS_CONFIG";
+                string sqlbing = @"SELECT * FROM APP_SYS_SETTING";
                 SYS_SETTING p = db.getsinglesysset(sqlbing);
                 configs.Add(p);
 

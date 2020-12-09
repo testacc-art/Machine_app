@@ -131,8 +131,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Source" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="Machine_APP.MyVideos" />
     <RootType FullName="Machine_APP.ProductEdit" />

@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>899a4de3-45f3-4740-9178-f5c56433fac6</PackageIdentityName>
     <PackageIdentityPublisher>CN=yijun</PackageIdentityPublisher>
-    <IntermediateOutputPath>E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\Machine_APP.exe">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Machine_APP.exe">
       <PackagePath>entrypoint\Machine_APP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yijun\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
@@ -52,523 +52,523 @@
     <AppxPackagedFile Include="C:\Users\yijun\.nuget\packages\sqlitepcl\3.8.7.2\build\netcore451\SQLitePCL.Ext.dll">
       <PackagePath>SQLitePCL.Ext.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\1.jpg">
       <PackagePath>PIC\1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\2.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\2.jpg">
       <PackagePath>PIC\2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\3.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\3.jpg">
       <PackagePath>PIC\3.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\4.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\4.jpg">
       <PackagePath>PIC\4.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\5.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\5.jpg">
       <PackagePath>PIC\5.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\bj.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\bj.jpg">
       <PackagePath>PIC\bj.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\doulei_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\doulei_1.jpg">
       <PackagePath>PIC\doulei_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\doulei_2.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\doulei_2.jpg">
       <PackagePath>PIC\doulei_2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\genjin_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\genjin_1.jpg">
       <PackagePath>PIC\genjin_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\genjin_2.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\genjin_2.jpg">
       <PackagePath>PIC\genjin_2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\genjin_3.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\genjin_3.jpg">
       <PackagePath>PIC\genjin_3.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\genjin_4.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\genjin_4.jpg">
       <PackagePath>PIC\genjin_4.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\genjin_5.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\genjin_5.jpg">
       <PackagePath>PIC\genjin_5.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\genjin_6.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\genjin_6.jpg">
       <PackagePath>PIC\genjin_6.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\genjin_7.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\genjin_7.jpg">
       <PackagePath>PIC\genjin_7.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_1.jpg">
       <PackagePath>PIC\guaguo_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_10.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_10.jpg">
       <PackagePath>PIC\guaguo_10.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_2.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_2.jpg">
       <PackagePath>PIC\guaguo_2.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_3.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_3.jpg">
       <PackagePath>PIC\guaguo_3.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_4.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_4.jpg">
       <PackagePath>PIC\guaguo_4.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_5.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_5.jpg">
       <PackagePath>PIC\guaguo_5.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_6.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_6.jpg">
       <PackagePath>PIC\guaguo_6.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_7.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_7.jpg">
       <PackagePath>PIC\guaguo_7.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_8.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_8.jpg">
       <PackagePath>PIC\guaguo_8.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\guaguo_9.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\guaguo_9.jpg">
       <PackagePath>PIC\guaguo_9.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\huacai_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\huacai_1.jpg">
       <PackagePath>PIC\huacai_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\ncbg.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\ncbg.jpg">
       <PackagePath>PIC\ncbg.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\new.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\new.jpg">
       <PackagePath>PIC\new.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\pay.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\pay.jpg">
       <PackagePath>PIC\pay.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\timg.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\timg.jpg">
       <PackagePath>PIC\timg.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\wx.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\wx.jpg">
       <PackagePath>PIC\wx.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_baijian_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_baijian_1.jpg">
       <PackagePath>PIC\yecai_baijian_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_baocai_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_baocai_1.jpg">
       <PackagePath>PIC\yecai_baocai_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_daqing_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_daqing_1.jpg">
       <PackagePath>PIC\yecai_daqing_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_digua_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_digua_1.jpg">
       <PackagePath>PIC\yecai_digua_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_jielan_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_jielan_1.jpg">
       <PackagePath>PIC\yecai_jielan_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_kongxin_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_kongxin_1.jpg">
       <PackagePath>PIC\yecai_kongxin_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_shanghaiqing_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_shanghaiqing_1.jpg">
       <PackagePath>PIC\yecai_shanghaiqing_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_shengcai_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_shengcai_1.jpg">
       <PackagePath>PIC\yecai_shengcai_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_wawa_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_wawa_1.jpg">
       <PackagePath>PIC\yecai_wawa_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\yecai_youmai_1.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\yecai_youmai_1.jpg">
       <PackagePath>PIC\yecai_youmai_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\zfb.jpg">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\zfb.jpg">
       <PackagePath>PIC\zfb.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\about_us.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\about_us.png">
       <PackagePath>PIC\about_us.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\add.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\add.png">
       <PackagePath>PIC\add.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\alipay.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\alipay.png">
       <PackagePath>PIC\alipay.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\backup.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\backup.png">
       <PackagePath>PIC\backup.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\backv2.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\backv2.png">
       <PackagePath>PIC\backv2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\cardrecharge.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\cardrecharge.png">
       <PackagePath>PIC\cardrecharge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\checked.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\checked.png">
       <PackagePath>PIC\checked.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\checkreport.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\checkreport.png">
       <PackagePath>PIC\checkreport.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\chooes6.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\chooes6.png">
       <PackagePath>PIC\chooes6.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\choose1.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\choose1.png">
       <PackagePath>PIC\choose1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\choose2.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\choose2.png">
       <PackagePath>PIC\choose2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\choose4.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\choose4.png">
       <PackagePath>PIC\choose4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\cjsc.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\cjsc.png">
       <PackagePath>PIC\cjsc.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\clear.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\clear.png">
       <PackagePath>PIC\clear.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\clickbuy.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\clickbuy.png">
       <PackagePath>PIC\clickbuy.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\clickbuy2.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\clickbuy2.png">
       <PackagePath>PIC\clickbuy2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\default_bg2.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\default_bg2.png">
       <PackagePath>PIC\default_bg2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\gallery_radio_off.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\gallery_radio_off.png">
       <PackagePath>PIC\gallery_radio_off.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\gallery_radio_on.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\gallery_radio_on.png">
       <PackagePath>PIC\gallery_radio_on.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\go_buy.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\go_buy.png">
       <PackagePath>PIC\go_buy.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\helper.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\helper.png">
       <PackagePath>PIC\helper.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\helperv.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\helperv.png">
       <PackagePath>PIC\helperv.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\helppay.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\helppay.png">
       <PackagePath>PIC\helppay.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\home.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\home.png">
       <PackagePath>PIC\home.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\homebuy.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\homebuy.png">
       <PackagePath>PIC\homebuy.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\homebuy2.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\homebuy2.png">
       <PackagePath>PIC\homebuy2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\homev.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\homev.png">
       <PackagePath>PIC\homev.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\home_btn_bg_d.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\home_btn_bg_d.png">
       <PackagePath>PIC\home_btn_bg_d.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\home_btn_bg_d1.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\home_btn_bg_d1.png">
       <PackagePath>PIC\home_btn_bg_d1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\home_btn_bg_n.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\home_btn_bg_n.png">
       <PackagePath>PIC\home_btn_bg_n.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\home_btn_bg_s.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\home_btn_bg_s.png">
       <PackagePath>PIC\home_btn_bg_s.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\home_iccard_back.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\home_iccard_back.png">
       <PackagePath>PIC\home_iccard_back.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\ic-previous.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\ic-previous.png">
       <PackagePath>PIC\ic-previous.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\ic-right.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\ic-right.png">
       <PackagePath>PIC\ic-right.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\iccard.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\iccard.png">
       <PackagePath>PIC\iccard.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\iccardgive.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\iccardgive.png">
       <PackagePath>PIC\iccardgive.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\iccardnew.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\iccardnew.png">
       <PackagePath>PIC\iccardnew.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\iccardv.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\iccardv.png">
       <PackagePath>PIC\iccardv.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\iccard_tb.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\iccard_tb.png">
       <PackagePath>PIC\iccard_tb.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\icon.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\icon.png">
       <PackagePath>PIC\icon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\ic_card_back.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\ic_card_back.png">
       <PackagePath>PIC\ic_card_back.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\ic_launcher_round.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\ic_launcher_round.png">
       <PackagePath>PIC\ic_launcher_round.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\left1.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\left1.png">
       <PackagePath>PIC\left1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\liucheng.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\liucheng.png">
       <PackagePath>PIC\liucheng.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\ljt.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\ljt.png">
       <PackagePath>PIC\ljt.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\log.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\log.png">
       <PackagePath>PIC\log.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\login_pwd.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\login_pwd.png">
       <PackagePath>PIC\login_pwd.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\login_user.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\login_user.png">
       <PackagePath>PIC\login_user.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\logo.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\logo.png">
       <PackagePath>PIC\logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\logoapp.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\logoapp.png">
       <PackagePath>PIC\logoapp.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\logrecord.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\logrecord.png">
       <PackagePath>PIC\logrecord.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\maintab_toolbar_bg.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\maintab_toolbar_bg.png">
       <PackagePath>PIC\maintab_toolbar_bg.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\max_wifi.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\max_wifi.png">
       <PackagePath>PIC\max_wifi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\minus.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\minus.png">
       <PackagePath>PIC\minus.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\netx_page.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\netx_page.png">
       <PackagePath>PIC\netx_page.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\normal.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\normal.png">
       <PackagePath>PIC\normal.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\no_1.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\no_1.png">
       <PackagePath>PIC\no_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\no_2.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\no_2.png">
       <PackagePath>PIC\no_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\no_3.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\no_3.png">
       <PackagePath>PIC\no_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\no_4.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\no_4.png">
       <PackagePath>PIC\no_4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\no_new_1.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\no_new_1.png">
       <PackagePath>PIC\no_new_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\no_new_2.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\no_new_2.png">
       <PackagePath>PIC\no_new_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\no_new_3.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\no_new_3.png">
       <PackagePath>PIC\no_new_3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\no_new_4.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\no_new_4.png">
       <PackagePath>PIC\no_new_4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\no_wifi.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\no_wifi.png">
       <PackagePath>PIC\no_wifi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\one_wifi.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\one_wifi.png">
       <PackagePath>PIC\one_wifi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\pressure.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\pressure.png">
       <PackagePath>PIC\pressure.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\right2.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\right2.png">
       <PackagePath>PIC\right2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setadd.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setadd.png">
       <PackagePath>PIC\setadd.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setbackup.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setbackup.png">
       <PackagePath>PIC\setbackup.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setcard.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setcard.png">
       <PackagePath>PIC\setcard.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setdownload.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setdownload.png">
       <PackagePath>PIC\setdownload.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setflag.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setflag.png">
       <PackagePath>PIC\setflag.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setmachine.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setmachine.png">
       <PackagePath>PIC\setmachine.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setport.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setport.png">
       <PackagePath>PIC\setport.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setproduct.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setproduct.png">
       <PackagePath>PIC\setproduct.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setset.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setset.png">
       <PackagePath>PIC\setset.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setsync.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setsync.png">
       <PackagePath>PIC\setsync.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\setting.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\setting.png">
       <PackagePath>PIC\setting.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\settingv.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\settingv.png">
       <PackagePath>PIC\settingv.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\shoppingcart.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\shoppingcart.png">
       <PackagePath>PIC\shoppingcart.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\shucai.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\shucai.png">
       <PackagePath>PIC\shucai.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\star.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\star.png">
       <PackagePath>PIC\star.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\stress_test.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\stress_test.png">
       <PackagePath>PIC\stress_test.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\sym_keyboard_delete.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\sym_keyboard_delete.png">
       <PackagePath>PIC\sym_keyboard_delete.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\sysrestore.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\sysrestore.png">
       <PackagePath>PIC\sysrestore.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\systemupdate.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\systemupdate.png">
       <PackagePath>PIC\systemupdate.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\three_wifi.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\three_wifi.png">
       <PackagePath>PIC\three_wifi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\top_page.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\top_page.png">
       <PackagePath>PIC\top_page.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\trash.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\trash.png">
       <PackagePath>PIC\trash.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\tubiao.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\tubiao.png">
       <PackagePath>PIC\tubiao.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\two_wifi.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\two_wifi.png">
       <PackagePath>PIC\two_wifi.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\update.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\update.png">
       <PackagePath>PIC\update.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\video.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\video.png">
       <PackagePath>PIC\video.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\weixin.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\weixin.png">
       <PackagePath>PIC\weixin.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\weixin1.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\weixin1.png">
       <PackagePath>PIC\weixin1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\weixinliucheng.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\weixinliucheng.png">
       <PackagePath>PIC\weixinliucheng.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\weixinpay.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\weixinpay.png">
       <PackagePath>PIC\weixinpay.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\wx_2wm.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\wx_2wm.png">
       <PackagePath>PIC\wx_2wm.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\zfb_2wm.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\zfb_2wm.png">
       <PackagePath>PIC\zfb_2wm.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\zhifubao.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\zhifubao.png">
       <PackagePath>PIC\zhifubao.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\zhifubao1.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\zhifubao1.png">
       <PackagePath>PIC\zhifubao1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\zhifubaoliuceng.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\zhifubaoliuceng.png">
       <PackagePath>PIC\zhifubaoliuceng.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\ic_launcher_foreground.xml">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\ic_launcher_foreground.xml">
       <PackagePath>PIC\ic_launcher_foreground.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\PIC\mv.mp4">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\mv.mp4">
       <PackagePath>PIC\mv.mp4</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\readme\Readme.txt">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\readme\Readme.txt">
       <PackagePath>readme\Readme.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\readme\SQL.txt">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\readme\SQL.txt">
       <PackagePath>readme\SQL.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\Machine_APP.xr.xml">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Machine_APP.xr.xml">
       <PackagePath>Machine_APP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\App_sys_config.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\App_sys_config.xbf">
       <PackagePath>App_sys_config.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\BuyMain.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\BuyMain.xbf">
       <PackagePath>BuyMain.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\CarMain.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\CarMain.xbf">
       <PackagePath>CarMain.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\MyCar.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\MyCar.xbf">
       <PackagePath>MyCar.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\MyPay.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\MyPay.xbf">
       <PackagePath>MyPay.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\MyVideos.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\MyVideos.xbf">
       <PackagePath>MyVideos.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\ProductEdit.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\ProductEdit.xbf">
       <PackagePath>ProductEdit.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\ProductEditbysingle.xbf">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\ProductEditbysingle.xbf">
       <PackagePath>ProductEditbysingle.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\开发文件\自动贩卖\project\Machine_APP-202000914\Machine_APP\Machine_APP\bin\x86\Debug\Core\Machine_APP.exe">
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Core\Machine_APP.exe">
       <PackagePath>Machine_APP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

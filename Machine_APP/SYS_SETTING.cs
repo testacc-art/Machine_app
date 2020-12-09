@@ -40,7 +40,7 @@ namespace Machine_APP
 
         public int ChannelCount1 { get => ChannelCount; set { ChannelCount = value; this.OnPropertyChanged(); } }
         public int LayerRowCount1 { get => LayerRowCount; set { LayerRowCount = value; this.OnPropertyChanged(); } }
-    public int LayerColumnCount1 { get => LayerColumnCount; set { LayerColumnCount = value; this.OnPropertyChanged(); } }
+        public int LayerColumnCount1 { get => LayerColumnCount; set { LayerColumnCount = value; this.OnPropertyChanged(); } }
         public string RequeryUrl1 { get => RequeryUrl; set { RequeryUrl = value; this.OnPropertyChanged(); } }
         public string ICardPassword1 { get => ICardPassword; set { ICardPassword = value; this.OnPropertyChanged(); } }
         public string MachineAddress1 { get => MachineAddress; set { MachineAddress = value; this.OnPropertyChanged(); } }

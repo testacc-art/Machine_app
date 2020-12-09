@@ -7957,11 +7957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\开发文件\\自动贩卖\\project\\Machine_APP-202000914\\Machine_APP\\Machine_APP\\Machine_APP.csproj",
+      "projectUniqueName": "E:\\开发文件\\Machine_APP\\Machine_APP\\Machine_APP.csproj",
       "projectName": "Machine_APP",
-      "projectPath": "E:\\开发文件\\自动贩卖\\project\\Machine_APP-202000914\\Machine_APP\\Machine_APP\\Machine_APP.csproj",
+      "projectPath": "E:\\开发文件\\Machine_APP\\Machine_APP\\Machine_APP.csproj",
       "packagesPath": "C:\\Users\\yijun\\.nuget\\packages\\",
-      "outputPath": "E:\\开发文件\\自动贩卖\\project\\Machine_APP-202000914\\Machine_APP\\Machine_APP\\obj\\",
+      "outputPath": "E:\\开发文件\\Machine_APP\\Machine_APP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

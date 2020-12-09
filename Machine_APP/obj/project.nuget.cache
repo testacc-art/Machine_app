@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M+QWp6ALhtTveognPgKAZni0O90CSEQAjQH5IyaTwB8KJRn3NQkpYO3lyjABwAAKyDhNwfv0zxPUt771xcVNIg==",
+  "dgSpecHash": "o8FOzrqRAJqAxY3KZRpJDJNmbpK7PoXiK+dOR6ymRYPsakEiVGbdh4vBgGMWRVCCE1rdbRcsS2kGN/C9BRPDPw==",
   "success": true,
-  "projectFilePath": "E:\\开发文件\\自动贩卖\\project\\Machine_APP-202000914\\Machine_APP\\Machine_APP\\Machine_APP.csproj",
+  "projectFilePath": "E:\\开发文件\\Machine_APP\\Machine_APP\\Machine_APP.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
