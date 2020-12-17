@@ -114,30 +114,31 @@
     <Compile Include="dal\QRCodeHelper.cs" />
     <Compile Include="dal\SYS_CONFIG_DAL.cs" />
     <Compile Include="dal\SYS_SETTING_DAL.cs" />
-    <Compile Include="FINISHOUT_DETAILS.cs" />
+    <Compile Include="model\FINISHOUT_DETAILS.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="model\ProductView.cs" />
     <Compile Include="MyPay.xaml.cs">
       <DependentUpon>MyPay.xaml</DependentUpon>
     </Compile>
     <Compile Include="MyVideos.xaml.cs">
       <DependentUpon>MyVideos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PAY_DETAILS.cs" />
-    <Compile Include="pay_info.cs" />
-    <Compile Include="pay_infor_detail.cs" />
-    <Compile Include="PAY_RECORD.cs" />
-    <Compile Include="PRODUCT.cs" />
+    <Compile Include="model\PAY_DETAILS.cs" />
+    <Compile Include="model\pay_info.cs" />
+    <Compile Include="model\pay_infor_detail.cs" />
+    <Compile Include="model\PAY_RECORD.cs" />
+    <Compile Include="model\PRODUCT.cs" />
     <Compile Include="ProductEdit.xaml.cs">
       <DependentUpon>ProductEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="ProductEditbysingle.xaml.cs">
       <DependentUpon>ProductEditbysingle.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SYS_CONFIG.cs" />
-    <Compile Include="SYS_SETTING.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="model\SYS_CONFIG.cs" />
+    <Compile Include="model\SYS_SETTING.cs" />
+    <Compile Include="model\User.cs" />
     <Compile Include="MyCar.xaml.cs">
       <DependentUpon>MyCar.xaml</DependentUpon>
     </Compile>
@@ -158,9 +159,16 @@
     <Content Include="PIC\about_us.png" />
     <Content Include="PIC\add.png" />
     <Content Include="PIC\alipay.png" />
+    <Content Include="PIC\back.jpg" />
+    <Content Include="PIC\back1.jpg" />
+    <Content Include="PIC\back2.jpg" />
     <Content Include="PIC\backup.png" />
     <Content Include="PIC\backv2.png" />
+    <Content Include="PIC\back_home.jpg" />
+    <Content Include="PIC\back_home2.jpg" />
     <Content Include="PIC\bj.jpg" />
+    <Content Include="PIC\buy1.png" />
+    <Content Include="PIC\car1.png" />
     <Content Include="PIC\cardrecharge.png" />
     <Content Include="PIC\checked.png" />
     <Content Include="PIC\checkreport.png" />

@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using Machine_APP.model;
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
 
 namespace Machine_APP
@@ -30,7 +30,6 @@ namespace Machine_APP
             foreach (var item in (Application.Current as App).pdlist)
             {
                 DETAILS.Add(item);
-                
             }
         }
 
@@ -69,5 +68,80 @@ namespace Machine_APP
 
             Frame.Navigate(typeof(MyPay), null);
         }
+
+        private void but_back_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(BuyMain), null);
+        }
+
+        private void but_min_Click(object sender, RoutedEventArgs e)
+        {
+            Button but = sender as Button;
+            Windows.UI.Xaml.Controls.StackPanel stackp = but.Parent as StackPanel;
+            PAY_DETAILS pds = null;
+            int num = 0;
+            foreach (var item in stackp.Children)
+            {
+                TextBlock tb = item as TextBlock;
+                if (tb == null)
+                    continue;
+                else
+                {
+                    pds = tb.DataContext as PAY_DETAILS;
+                    string abc = tb.Text;
+                    int.TryParse(abc, out num);
+                    num--;
+                    if (num < 0)
+                        num = 0;
+                    tb.Text = num.ToString();
+                    break;
+                }
+            }
+            if (pds != null)
+            {
+                pds.OutNum1 = num;
+            }
+        }
+
+        private void but_add_Click(object sender, RoutedEventArgs e)
+        {
+            Button but = sender as Button;
+            Windows.UI.Xaml.Controls.StackPanel stackp = but.Parent as StackPanel;
+            PAY_DETAILS pds = null;
+            int num = 0;
+            foreach (var item in stackp.Children)
+            {
+                TextBlock tb = item as TextBlock;
+                if (tb == null)
+                    continue;
+                else
+                {
+                    pds = tb.DataContext as PAY_DETAILS;
+                    string abc = tb.Text;
+                    int.TryParse(abc, out num);
+                    num++;
+                    if (pds != null)
+                    {
+                        if (pds != null)
+                        {
+                            List<PRODUCT> pt = (Application.Current as App).plist.Where(a => a.ChannelCode1 == pds.ChannelCode1).ToList();
+                            if (pt.Count > 0)
+                            {
+                                if (double.Parse(num.ToString()) > pt[0].CapacityNum)
+                                {
+                                    num--;
+                                }
+                            }
+                        }
+                        pds.OutNum1 = num;
+
+                    }
+                    tb.Text = num.ToString();
+                    break;
+                }
+            }
+
+        }
     }
 }
+

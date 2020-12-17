@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Machine_APP.model;
 namespace Machine_APP.dal
 {
     public class PAY_DETAILS_DAL

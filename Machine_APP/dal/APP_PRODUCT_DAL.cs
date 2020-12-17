@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Machine_APP.model;
+using System.Collections.ObjectModel;
 
 namespace Machine_APP.dal
 {
@@ -12,6 +14,42 @@ namespace Machine_APP.dal
         public PRODUCT porduct = null;
         DBhelp db = new DBhelp();
         public APP_PRODUCT_DAL() { }
+
+
+        public ObservableCollection<ProductView> serpveiw(List<PRODUCT> plist)
+        {
+            ObservableCollection<ProductView> pvlist = new ObservableCollection<ProductView>();
+            foreach (PRODUCT item in plist)
+            {
+                ProductView pv = new ProductView();
+                pv.ChannelCode1 = item.ChannelCode1;
+                pv.MachineType1 = item.MachineType1;
+                pv.MachineCode1 = item.MachineCode1;
+                pv.ProductName1 = item.ProductName1;
+                pv.Price1 = item.Price1;
+                pv.DiscountPrice1 = item.DiscountPrice1;
+                pv.DiscountDate1 = item.DiscountDate1;
+                pv.XFlag1 = item.XFlag1;
+                pv.YFlag1 = item.YFlag1;
+                pv.ChannelStatus1 = item.ChannelStatus1;
+                pv.PictureUrl1 = item.PictureUrl1;
+                pv.ChannelLength1 = item.ChannelLength1;
+                pv.ChannelWidth1 = item.ChannelWidth1;
+                pv.ChannelType1 = item.ChannelType1;
+                pv.ProductNum1 = item.ProductNum1;
+                pv.CapacityNum1 = item.CapacityNum1;
+                pv.IsDisable1 = item.IsDisable1;
+                pv.Creator1 = item.Creator1;
+                pv.CreateDate1 = item.CreateDate1;
+                pv.Modifier1 = item.Modifier1;
+                pv.ModifyDate1 = item.ModifyDate1;
+                pv.choosenum1 = 0;
+                pvlist.Add(pv);
+            }
+            return pvlist;
+
+        }
+
 
 
         /// <summary>
@@ -112,8 +150,8 @@ namespace Machine_APP.dal
             {
 
                 string sql = " UPDATE APP_PRODUCT SET ChannelCode='{0}', MachineType={1}, MachineCode='{2}', ProductName='{3}', Price={4}, DiscountPrice={5}, DiscountDate='{6}', XFlag={7}, YFlag={8}, ChannelStatus={9}, PictureUrl='{10}', ChannelLength={11}, ChannelWidth={12}, ChannelType={13}, ProductNum={14}, CapacityNum={15}, IsDisable={16}, Creator='{17}', CreateDate='{18}', Modifier='{19}', ModifyDate='{20}' WHERE (ChannelCode='{0}') AND (MachineCode='{2}');";
-                sql = string.Format(sql, pro.ChannelCode1, pro.MachineType1, pro.MachineCode1, pro.ProductName1, pro.Price1, pro.DiscountPrice1, pro.DiscountDate1, pro.XFlag1, pro.YFlag1, 
-                    pro.ChannelStatus1, pro.PictureUrl1, pro.ChannelLength1, pro.ChannelWidth1, pro.ChannelType1, pro.ProductNum1, pro.CapacityNum1, pro.IsDisable1, pro.Creator1, pro.CreateDate1, 
+                sql = string.Format(sql, pro.ChannelCode1, pro.MachineType1, pro.MachineCode1, pro.ProductName1, pro.Price1, pro.DiscountPrice1, pro.DiscountDate1, pro.XFlag1, pro.YFlag1,
+                    pro.ChannelStatus1, pro.PictureUrl1, pro.ChannelLength1, pro.ChannelWidth1, pro.ChannelType1, pro.ProductNum1, pro.CapacityNum1, pro.IsDisable1, pro.Creator1, pro.CreateDate1,
                     pro.Modifier1, pro.ModifyDate1);
                 db.UpdateRow(sql);
             }

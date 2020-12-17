@@ -14,7 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using Machine_APP.model;
+using Machine_APP.dal;
 namespace Machine_APP
 {
     /// <summary>
@@ -26,14 +27,19 @@ namespace Machine_APP
         public PAY_RECORD pr = null;
         //购物信息
         public List<PAY_DETAILS> pdlist = new List<PAY_DETAILS>();
+        //
+        public SYS_CONFIG syscofig = new SYS_CONFIG();
         /// <summary>
         /// 初始化单一实例应用程序对象。这是执行的创作代码的第一行，
         /// 已执行，逻辑上等同于 main() 或 WinMain()。
         /// </summary>
         public App()
         {
+
+
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
         }
 
         /// <summary>
@@ -73,16 +79,35 @@ namespace Machine_APP
             {
                 if (rootFrame.Content == null)
                 {
-                    // 当导航堆栈尚未还原时，导航到第一页，
-                    // 并通过将所需信息作为导航参数传入来配置
-                    // 参数
-                    // rootFrame.Navigate(typeof(MyPay), e.Arguments);
-                    // rootFrame.Navigate(typeof(MyVideos), e.Arguments);
-                    //rootFrame.Navigate(typeof(MainPage), e.Arguments);
-                    //  rootFrame.Navigate(typeof(MyCar), e.Arguments);
-                    //rootFrame.Navigate(typeof(BuyMain), e.Arguments);
+                    //获取机器信息
+                    int status = setSysconfig();
+                    if (status != 1)
+                    {
+                        var dialog = new ContentDialog()
+                        {
+                            Title = "消息提示",
+                            Content = "获取机器参数失败，无法开机",
+                            PrimaryButtonText = "确定",
+                            //SecondaryButtonText = "取消",
+                            FullSizeDesired = false,
+                        };
+                        dialog.PrimaryButtonClick += (_s, _e) => { };
+                        dialog.ShowAsync();
+                    }
+                    else
+
+
+                        // 当导航堆栈尚未还原时，导航到第一页，
+                        // 并通过将所需信息作为导航参数传入来配置
+                        // 参数
+                        //rootFrame.Navigate(typeof(MainPage), e.Arguments); no
+                        // rootFrame.Navigate(typeof(MyPay), e.Arguments);
+                        // rootFrame.Navigate(typeof(MyVideos), e.Arguments);
+
+                        //rootFrame.Navigate(typeof(MyCar), e.Arguments);
+                        rootFrame.Navigate(typeof(BuyMain), e.Arguments);
                     // rootFrame.Navigate(typeof(ProductEdit), e.Arguments);
-                    rootFrame.Navigate(typeof(App_sys_config), e.Arguments);
+                    //rootFrame.Navigate(typeof(App_sys_config), e.Arguments);
 
                 }
                 // 确保当前窗口处于活动状态
@@ -112,6 +137,25 @@ namespace Machine_APP
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: 保存应用程序状态并停止任何后台活动
             deferral.Complete();
+        }
+
+        private int setSysconfig()
+        {
+            try
+            {
+                SYS_CONFIG_DAL sdal = new SYS_CONFIG_DAL();
+                List<SYS_CONFIG> slist = sdal.getlist();
+                if (slist.Count > 0)
+                {
+                    syscofig = slist[0];
+                    return 1;
+                }
+                else return 0;
+            }
+            catch (Exception ex)
+            {
+                return 2;
+            }
         }
     }
 }

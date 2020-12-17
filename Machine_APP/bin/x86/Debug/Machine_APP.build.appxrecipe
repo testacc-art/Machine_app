@@ -67,6 +67,21 @@
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\5.jpg">
       <PackagePath>PIC\5.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\back.jpg">
+      <PackagePath>PIC\back.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\back1.jpg">
+      <PackagePath>PIC\back1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\back2.jpg">
+      <PackagePath>PIC\back2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\back_home.jpg">
+      <PackagePath>PIC\back_home.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\back_home2.jpg">
+      <PackagePath>PIC\back_home2.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\bj.jpg">
       <PackagePath>PIC\bj.jpg</PackagePath>
     </AppxPackagedFile>
@@ -192,6 +207,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\backv2.png">
       <PackagePath>PIC\backv2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\buy1.png">
+      <PackagePath>PIC\buy1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\car1.png">
+      <PackagePath>PIC\car1.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\cardrecharge.png">
       <PackagePath>PIC\cardrecharge.png</PackagePath>

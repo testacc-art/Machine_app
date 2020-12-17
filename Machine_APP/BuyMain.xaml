@@ -2,12 +2,12 @@
     x:Class="Machine_APP.BuyMain"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Machine_APP"
+    xmlns:local="using:Machine_APP.model"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-  
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="88*"/>
@@ -16,19 +16,29 @@
         <Grid Name="grid_1" Grid.Row="0" >
             <GridView ItemsSource="{x:Bind PRODUCTs}" Margin="0,50,0,0" Name="GridView1">
                 <GridView.ItemTemplate>
-                    <DataTemplate x:DataType="local:PRODUCT">
+                    <DataTemplate x:DataType="local:ProductView">
                         <Border  BorderBrush="DeepSkyBlue" BorderThickness="5" Width="210" >
                             <StackPanel Orientation="Vertical" Width="200">
                                 <Image Width="150" Source="{x:Bind PictureUrl1}" />
                                 <TextBlock FontSize="24" Text="{x:Bind ProductName1}" HorizontalAlignment="Center"/>
-                                <TextBlock FontSize="24" Text="{x:Bind DiscountPrice1}" HorizontalAlignment="Center"/>
+
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock FontSize="24" Text="单价：" HorizontalAlignment="Left"/>
+                                    <TextBlock FontSize="24" Text="{x:Bind DiscountPrice1}" HorizontalAlignment="Center"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Tag="thisnum_s">
+                                    <TextBlock FontSize="24" Text="库存：" HorizontalAlignment="Left"/>
+                                    <TextBlock FontSize="24" Text="{x:Bind ProductNum1}" HorizontalAlignment="Center" />
+                                    <TextBlock FontSize="24" Text="{x:Bind ChannelCode1}" HorizontalAlignment="Center" Visibility="Collapsed" Tag="thisnum_t"/>
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                     <Button   Width="50" Height="50" Click="Button_Click"  >
                                         <Button.Background>
                                             <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
                                         </Button.Background>
                                     </Button>
-                                    <TextBlock Width="100" FontSize="24" Text="{x:Bind ProductNum1}" HorizontalAlignment="Center" TextAlignment="Center" />
+
+                                    <TextBlock  Width="50"  FontSize="24" Text="{x:Bind choosenum1}" HorizontalAlignment="Center" TextAlignment="Center"  />
                                     <Button   Width="50" Height="50" Click="add_1_1_Click" >
                                         <Button.Background>
                                             <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
@@ -49,12 +59,12 @@
 
             <Button Name="but_car"     HorizontalAlignment="left" VerticalAlignment="Center" Height="105" Width="173" Click="but_car_Click">
                 <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="PIC/shoppingcart.png"/>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/car1.png"/>
                 </Button.Background>
             </Button>
             <Button x:Name="but_next"     HorizontalAlignment="Right" VerticalAlignment="Center" Height="105" Width="173" Click="but_next_Click" >
                 <Button.Background>
-                    <ImageBrush Stretch="Fill" ImageSource="PIC/clickbuy2.png"/>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/buy1.png"/>
                 </Button.Background>
             </Button>
         </Grid>
