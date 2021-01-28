@@ -11,9 +11,15 @@
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"/>
-            <RowDefinition Height="95*"/>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
         <Grid Name="grid_2" Grid.Row="0" >
+            <Button Name="but_backup"  Width="50" Height="50" HorizontalAlignment="left" Click="but_backup_Click"  >
+                <Button.Background>
+                    <ImageBrush ImageSource="/PIC/backup.png"/>
+                </Button.Background>
+            </Button>
             <Button Name="but_new"  Width="50" Height="50" HorizontalAlignment="right" Click="but_new_Click"  >
                 <Button.Background>
                     <ImageBrush ImageSource="/PIC/new.jpg"/>
@@ -31,7 +37,7 @@
                                 <TextBox FontSize="24" Width="250" Text="{x:Bind ProductName1}" VerticalAlignment="Center"/>
                                 <TextBox FontSize="24" Width="150" Text="{x:Bind Price1}" VerticalAlignment="Center"/>
                                 <TextBox Width="150" FontSize="24"  Text="{x:Bind ProductNum1}" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"/>
-                                <Button Name="but_sub"   Width="50" Height="50"  HorizontalAlignment="Right" Click="but_sub_Click" >
+                                <Button Name="but_sub"   Width="50" Height="50"  HorizontalAlignment="Right" Click="but_sub_Click"  >
                                     <Button.Background>
                                         <ImageBrush Stretch="Fill" ImageSource="PIC/checked.png"/>
                                     </Button.Background>
@@ -52,7 +58,14 @@
                 </GridView.ItemTemplate>
             </GridView>
         </Grid>
+        <Grid  Grid.Row="2" Grid.ColumnSpan="2">
+            <Button Name="but_back"     HorizontalAlignment="left" VerticalAlignment="Center" Height="80" Width="80" Click="but_back_Click"  >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/left1.png"/>
+                </Button.Background>
+            </Button>
 
+        </Grid>
     </Grid>
 
 </Page>

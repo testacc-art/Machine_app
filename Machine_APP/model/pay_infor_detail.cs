@@ -10,6 +10,7 @@ namespace Machine_APP
     [JsonObject(MemberSerialization.OptOut)]
     public class pay_infor_detail
     {
+        public pay_infor_detail() { }
         public pay_infor_detail(string productName, string channelCode, string createDate, string creator, string pictureUrl, string payNo, string payDetailNo, string machineCode, int payAmount, int outNum, int isPayComplated, int isOutStatus, int finishOutNum, float amount, float returnAmount, float unitPrice)
         {
             ProductName = productName;

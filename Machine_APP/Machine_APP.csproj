@@ -96,6 +96,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AppConfig.xaml.cs">
+      <DependentUpon>AppConfig.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App_sys_config.xaml.cs">
       <DependentUpon>App_sys_config.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,8 @@
     <Compile Include="dal\APP_PRODUCT_DAL.cs" />
     <Compile Include="dal\CreateDBTable.cs" />
     <Compile Include="dal\DBhelp.cs" />
+    <Compile Include="dal\jsonHelp.cs" />
+    <Compile Include="dal\Log_dal.cs" />
     <Compile Include="dal\PAY_DETAILS_DAL.cs" />
     <Compile Include="dal\PAY_RECORD_DAL.cs" />
     <Compile Include="dal\QRCodeHelper.cs" />
@@ -118,6 +123,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="model\Json_restun.cs" />
     <Compile Include="model\ProductView.cs" />
     <Compile Include="MyPay.xaml.cs">
       <DependentUpon>MyPay.xaml</DependentUpon>
@@ -143,6 +149,9 @@
       <DependentUpon>MyCar.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shelves_edit.xaml.cs">
+      <DependentUpon>Shelves_edit.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -243,6 +252,7 @@
     <Content Include="PIC\ncbg.jpg" />
     <Content Include="PIC\netx_page.png" />
     <Content Include="PIC\new.jpg" />
+    <Content Include="PIC\noimage.jpg" />
     <Content Include="PIC\normal.png" />
     <Content Include="PIC\no_1.png" />
     <Content Include="PIC\no_2.png" />
@@ -321,6 +331,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AppConfig.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="App_sys_config.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -354,6 +368,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ProductEditbysingle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Shelves_edit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

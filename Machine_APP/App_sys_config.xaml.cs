@@ -28,11 +28,19 @@ namespace Machine_APP
         public ObservableCollection<SYS_SETTING> sseets { get; } = new ObservableCollection<SYS_SETTING>();
         public App_sys_config()
         {
-            SYS_CONFIG_DAL pdal = new SYS_CONFIG_DAL();
-            List<SYS_CONFIG> plist = pdal.getlist();
-            foreach (var item in plist)
+            try
             {
+                SYS_CONFIG_DAL pdal = new SYS_CONFIG_DAL();
+                List<SYS_CONFIG> plist = pdal.getlist();
+                foreach (var item in plist)
+                {
 
+                }
+            }
+            catch (Exception ex)
+            {
+                Log_dal ld = new Log_dal();
+                ld.addLog(0, "App_sys_config  Error:" + ex.Message, DateTime.Now.ToString(), "");
             }
         }
     }

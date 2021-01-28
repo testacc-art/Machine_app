@@ -151,6 +151,9 @@
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\new.jpg">
       <PackagePath>PIC\new.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\noimage.jpg">
+      <PackagePath>PIC\noimage.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\pay.jpg">
       <PackagePath>PIC\pay.jpg</PackagePath>
     </AppxPackagedFile>
@@ -556,6 +559,9 @@
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\AppConfig.xbf">
+      <PackagePath>AppConfig.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\App_sys_config.xbf">
       <PackagePath>App_sys_config.xbf</PackagePath>
     </AppxPackagedFile>
@@ -582,6 +588,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\ProductEditbysingle.xbf">
       <PackagePath>ProductEditbysingle.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Shelves_edit.xbf">
+      <PackagePath>Shelves_edit.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

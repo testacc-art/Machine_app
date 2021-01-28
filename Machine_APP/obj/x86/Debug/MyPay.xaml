@@ -5,56 +5,99 @@
     xmlns:local="using:Machine_APP"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="830" Width="768">
+   
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+  
+    <!--mc:Ignorable="d" Height="830" Width="768"-->
     <Grid >
-        <Grid.Background>
-            <ImageBrush Stretch="UniformToFill" ImageSource="PIC/home_btn_bg_n.png"/>
-        </Grid.Background>
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="35*"/>
             <RowDefinition Height="5*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
-        <Image Source="PIC/homev.png"  Grid.Row="0"  MaxWidth="200" MaxHeight="200" Margin="0,0,528,0"/>
-        <Image Source="PIC/about_us.png"  Grid.Row="0"  MaxWidth="200" MaxHeight="200" Margin="300,0,0,0"/>
-        <Grid  Grid.Row="1" >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="40*"/>
-                <ColumnDefinition Width="60*"/>
-            </Grid.ColumnDefinitions>
+        
+        
+        <StackPanel Grid.Row="1"  Orientation="Vertical" VerticalAlignment="Center" Width="650">
 
-            <Grid  Grid.Row="0"  Grid.Column="1" >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="5*"/>
-                    <RowDefinition Height="35*"/>
-                </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0" Text="请选择支付方式" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"></TextBlock>
-                <StackPanel x:ConnectionId='4' Grid.Row="1"  Grid.Column="0"  Name="sp_1_1"  Margin="70,230.667,70,258.333" Height="133" VerticalAlignment="Center"  Orientation="Horizontal"  HorizontalAlignment="Center">
-
-                    <Button x:ConnectionId='5' x:Name="but_wx" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0.333" Width="113"                     >
-                        <Button.Background>
-                            <ImageBrush Stretch="Fill" ImageSource="PIC/wx.jpg"/>
-                        </Button.Background>
-                    </Button>
-                    <StackPanel Margin="0,0,0,0.333" Width="94"></StackPanel>
-                    <Button x:ConnectionId='6' x:Name="but_zfb" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0.333" Width="113"                       >
-                        <Button.Background>
-                            <ImageBrush Stretch="Fill" ImageSource="PIC/zfb.jpg"/>
-                        </Button.Background>
-                    </Button>
-                </StackPanel>
-            </Grid>
-            <Image x:ConnectionId='3' Name="pccode"  >
-                <!--Source="PIC/zfb_2wm.png"-->
-                
+            <Image x:ConnectionId='6' Name="pccode"  Source="PIC/zfb_2wm.png" Width="200" Height="200">
             </Image>
+
+
+        </StackPanel>
+        <StackPanel Grid.Row="2"  Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
+
+            <Button x:ConnectionId='4' x:Name="but_wx" Content="" Height="100"  Width="113"                      HorizontalAlignment="Center">
+                
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/wx.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:ConnectionId='5' x:Name="but_zfb" Content="" Height="100"  Width="113"                       HorizontalAlignment="Center" >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/zfb.jpg"/>
+                </Button.Background>
+            </Button>
+
+        </StackPanel>
+        <Grid Margin="10,0,10,10" Grid.Row="3">
+            <Button x:ConnectionId='2' Name="but_car"     HorizontalAlignment="left" VerticalAlignment="Center" Height="80" Width="80"                       >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/car1.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:ConnectionId='3' x:Name="but_cancel"  Content="取消订单"    HorizontalAlignment="Right" VerticalAlignment="Center" Height="80" Width="80"                          >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/buy1.png"/>
+                </Button.Background>
+            </Button>
         </Grid>
-        <Button x:ConnectionId='2' Name="but_car"   Grid.Row="2"  MaxWidth="200" MaxHeight="200" Width="135" Height="93"  Margin="10,12,0,13"                       >
-            <Button.Background>
-                <ImageBrush Stretch="Fill" ImageSource="PIC/ic-previous.png"/>
-            </Button.Background>
-        </Button>
+        <!--<StackPanel Grid.Row="2"  Orientation="Horizontal" VerticalAlignment="Top" Width="650">
+            <Button x:Name="but_wx" Content="" Height="100"  Width="113" Click="but_wx_Click" HorizontalAlignment="Center">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/wx.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="but_zfb" Content="" Height="100"  Width="113" Click="but_zfb_Click" HorizontalAlignment="Center" >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/zfb.jpg"/>
+                </Button.Background>
+            </Button>
+
+        </StackPanel>-->
+
+        <!--<Grid  Grid.Row="0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40*"/>
+                    <ColumnDefinition Width="60*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid  Grid.Row="0"  Grid.Column="1" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="35*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="请选择支付方式" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"></TextBlock>
+                    <StackPanel Grid.Row="1"  Grid.Column="0"  Name="sp_1_1"  Margin="70,230.667,70,258.333" Height="133" VerticalAlignment="Center"  Orientation="Horizontal"  HorizontalAlignment="Center">
+
+                        <Button x:Name="but_wx" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0.333" Width="113" Click="but_wx_Click">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="PIC/wx.jpg"/>
+                            </Button.Background>
+                        </Button>
+                        <StackPanel Margin="0,0,0,0.333" Width="94"></StackPanel>
+                        <Button x:Name="but_zfb" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0.333" Width="113" Click="but_zfb_Click" >
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="PIC/zfb.jpg"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+              
+            </Grid>-->
+
     </Grid>
 </Page>
 

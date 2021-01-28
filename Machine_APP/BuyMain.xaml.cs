@@ -89,8 +89,6 @@ namespace Machine_APP
                 }
             }
             #endregion
-
-
         }
 
         private void add_1_1_Click(object sender, RoutedEventArgs e)
@@ -215,55 +213,135 @@ namespace Machine_APP
 
         private void but_car_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(CarMain), null);
+            try
+            {
+                if ((Application.Current as App).pdlist.Count == 0)
+                {
+                    var dialog = new ContentDialog()
+                    {
+                        Title = "提示",
+                        // Content = ex.Message,
+                        PrimaryButtonText = "没有挑选商品",
+                        //SecondaryButtonText = "取消",
+                        FullSizeDesired = false,
+                    };
+                    dialog.PrimaryButtonClick += (_s, _e) => { };
+                    dialog.ShowAsync();
+                    return;
+                }
+                int sumnum = 0;
+                double sumamount = 0;
+                foreach (PAY_DETAILS item in (Application.Current as App).pdlist)
+                {
+                    sumnum = sumnum + item.OutNum1;
+                    sumamount = sumamount + item.PayAmount1;
+                }
+           (Application.Current as App).pr.PayAmount1 = sumamount;
+                (Application.Current as App).pr.OutSaleNum1 = sumnum;
+                Frame.Navigate(typeof(CarMain), null);
+            }
+
+            catch (Exception ex)
+            {
+                Log_dal ld = new Log_dal();
+                ld.addLog(0, "but_car_Click  Error:" + ex.Message, DateTime.Now.ToString(), "");
+                var dialog = new ContentDialog()
+                {
+                    Title = "报错提示",
+                    Content = ex.Message,
+                    PrimaryButtonText = "确定",
+                    //SecondaryButtonText = "取消",
+                    FullSizeDesired = false,
+                };
+                dialog.PrimaryButtonClick += (_s, _e) => { };
+                dialog.ShowAsync();
+            }
         }
 
         private void but_next_Click(object sender, RoutedEventArgs e)
         {
-
-            //主表
-            string payNo = "payNo" + DateTime.Now.ToString();
-            double amount = 0;
-            int num = 0;
-            for (int i = 0; i < (Application.Current as App).pdlist.Count(); i++)
+            try
             {
-                amount += (Application.Current as App).pdlist[i].PayAmount1;
-                num += (Application.Current as App).pdlist[i].OutDetailNum1;
-            }
+                if ((Application.Current as App).pdlist.Count == 0)
+                {
+                    var dialog = new ContentDialog()
+                    {
+                        Title = "提示",
+                        // Content = ex.Message,
+                        PrimaryButtonText = "没有挑选商品",
+                        //SecondaryButtonText = "取消",
+                        FullSizeDesired = false,
+                    };
+                    dialog.PrimaryButtonClick += (_s, _e) => { };
+                    dialog.ShowAsync();
+                    return;
+                }
+
+
+                //主表
+                string payNo = "payNo" + DateTime.Now.ToString();
+                double amount = 0;
+                int num = 0;
+                for (int i = 0; i < (Application.Current as App).pdlist.Count(); i++)
+                {
+                    amount += (Application.Current as App).pdlist[i].PayAmount1;
+                    num += (Application.Current as App).pdlist[i].OutDetailNum1;
+                }
 
             (Application.Current as App).pr.PayUserID1 = "payUserID";
-            (Application.Current as App).pr.ChannelCode1 = "ChannelCode1";
-            (Application.Current as App).pr.MachineCode1 = MCode;
-            (Application.Current as App).pr.IsPayComplated1 = 0;
-            (Application.Current as App).pr.PayType1 = "";
-            (Application.Current as App).pr.PayAccount1 = "";
-            (Application.Current as App).pr.PayAmount1 = amount;
-            (Application.Current as App).pr.IsFinishSale1 = 0;
-            (Application.Current as App).pr.OutSaleNum1 = num;
-            (Application.Current as App).pr.ReturnAmount1 = 0;
-            (Application.Current as App).pr.FinishReturnAmount1 = 0;
-            (Application.Current as App).pr.ReturnNum1 = 0;
-            (Application.Current as App).pr.CashAmount1 = 0;
-            (Application.Current as App).pr.ChangeAmount1 = 0;
-            (Application.Current as App).pr.CashGenerateStatus1 = 0;
-            (Application.Current as App).pr.CashCode1 = "";
-            (Application.Current as App).pr.Creator1 = "UserID";
-            (Application.Current as App).pr.CreateDate1 = DateTime.Now;
-            (Application.Current as App).pr.Modifier1 = "";
-            (Application.Current as App).pr.ModifyDate1 = DateTime.Now;
-            #region  insert 交易主表,子表
-            //dal.PAY_RECORD_DAL prd = new dal.PAY_RECORD_DAL((Application.Current as App).pr);
-            //prd.insertData();
-            ////循环设置子表外键，并insert子表
-            //dal.PAY_DETAILS_DAL pdd = new dal.PAY_DETAILS_DAL();
-            //foreach (PAY_DETAILS item in (Application.Current as App).pdlist)
-            //{
-            //    pdd.detail = item;
-            //    pdd.detail.PayNo1 = prd.record.PayNo1;
-            //    pdd.insertData();
-            //}
-            #endregion 
-            Frame.Navigate(typeof(MyPay), null);
+                (Application.Current as App).pr.ChannelCode1 = "ChannelCode1";
+                (Application.Current as App).pr.MachineCode1 = MCode;
+                (Application.Current as App).pr.IsPayComplated1 = 0;
+                (Application.Current as App).pr.PayType1 = "";
+                (Application.Current as App).pr.PayAccount1 = "";
+                (Application.Current as App).pr.PayAmount1 = amount;
+                (Application.Current as App).pr.IsFinishSale1 = 0;
+                (Application.Current as App).pr.OutSaleNum1 = num;
+                (Application.Current as App).pr.ReturnAmount1 = 0;
+                (Application.Current as App).pr.FinishReturnAmount1 = 0;
+                (Application.Current as App).pr.ReturnNum1 = 0;
+                (Application.Current as App).pr.CashAmount1 = 0;
+                (Application.Current as App).pr.ChangeAmount1 = 0;
+                (Application.Current as App).pr.CashGenerateStatus1 = 0;
+                (Application.Current as App).pr.CashCode1 = "";
+                (Application.Current as App).pr.Creator1 = "UserID";
+                (Application.Current as App).pr.CreateDate1 = DateTime.Now;
+                (Application.Current as App).pr.Modifier1 = "";
+                (Application.Current as App).pr.ModifyDate1 = DateTime.Now;
+                #region  insert 交易主表,子表
+                //dal.PAY_RECORD_DAL prd = new dal.PAY_RECORD_DAL((Application.Current as App).pr);
+                //prd.insertData();
+                ////循环设置子表外键，并insert子表
+                //dal.PAY_DETAILS_DAL pdd = new dal.PAY_DETAILS_DAL();
+                //foreach (PAY_DETAILS item in (Application.Current as App).pdlist)
+                //{
+                //    pdd.detail = item;
+                //    pdd.detail.PayNo1 = prd.record.PayNo1;
+                //    pdd.insertData();
+                //}
+                #endregion
+                Frame.Navigate(typeof(MyPay), null);
+            }
+            catch (Exception ex)
+            {
+                Log_dal ld = new Log_dal();
+                ld.addLog(0, "but_next_Click  Error:" + ex.Message, DateTime.Now.ToString(), "");
+                var dialog = new ContentDialog()
+                {
+                    Title = "报错提示",
+                    Content = ex.Message,
+                    PrimaryButtonText = "确定",
+                    //SecondaryButtonText = "取消",
+                    FullSizeDesired = false,
+                };
+                dialog.PrimaryButtonClick += (_s, _e) => { };
+                dialog.ShowAsync();
+            }
+        }
+
+        private void but_edit_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AppConfig), null);
         }
     }
 }

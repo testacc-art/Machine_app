@@ -104,8 +104,8 @@ namespace Machine_APP
                         // rootFrame.Navigate(typeof(MyPay), e.Arguments);
                         // rootFrame.Navigate(typeof(MyVideos), e.Arguments);
 
-                        //rootFrame.Navigate(typeof(MyCar), e.Arguments);
-                        rootFrame.Navigate(typeof(BuyMain), e.Arguments);
+                        // rootFrame.Navigate(typeof(MyCar), e.Arguments);
+                        rootFrame.Navigate(typeof(BuyMain), e.Arguments);//主页
                     // rootFrame.Navigate(typeof(ProductEdit), e.Arguments);
                     //rootFrame.Navigate(typeof(App_sys_config), e.Arguments);
 
@@ -122,6 +122,9 @@ namespace Machine_APP
         ///<param name="e">有关导航失败的详细信息</param>
         void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
         {
+
+            Log_dal ld = new Log_dal();
+            ld.addLog(0, "OnNavigationFailed  Error:" + e.SourcePageType.FullName, DateTime.Now.ToString(), "");
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
         }
 
@@ -154,6 +157,8 @@ namespace Machine_APP
             }
             catch (Exception ex)
             {
+                Log_dal ld = new Log_dal();
+                ld.addLog(0, "setSysconfig  Error:" + ex.Message, DateTime.Now.ToString(), "");
                 return 2;
             }
         }

@@ -208,6 +208,19 @@ namespace Machine_APP.dal
                 //执行语句
                 SQLiteConnection.Step();
             }
+            sql = string.Format(@"create table APP_LOG(
+id int identity(1,1),
+type int null,
+message text not null,
+createTime datetime  not null,
+user nvarchar(50) null
+)"); 
+            using (ISQLiteStatement SQLiteConnection = connection.Prepare(sql))
+            {
+                //执行语句
+                SQLiteConnection.Step();
+            }
+
         }
 
 
@@ -248,6 +261,27 @@ namespace Machine_APP.dal
             }
 
             return sr;
+        }
+
+
+        public int MAXData(string sql)
+        {
+            SQLiteConnection connection = new SQLiteConnection(dbname);
+
+            SQLiteResult result;
+            int a = 0;
+            using (var statment = connection.Prepare(sql))
+            {
+
+                result = statment.Step();
+                //if (SQLiteResult.ROW == result)
+                //{
+                //    var s = statment[1];
+                //    var r = statment[0];
+                //}
+                a = int.Parse(statment[0].ToString());
+            }
+            return a;
         }
 
         public SQLiteResult ReadData(string sql)

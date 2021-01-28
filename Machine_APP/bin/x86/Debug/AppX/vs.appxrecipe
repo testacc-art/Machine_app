@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>AB3BB7197569F6E1E80997CE1DB78CB5E51B552B91B0BB13CD94FEFFFD5EF7E3</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>321F4022EF7287C8A0FDD6FC034AAB7CE4599E1892826AC0665BF8CE4C88F2B8</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>899a4de3-45f3-4740-9178-f5c56433fac6_1.0.0.0_x86__ttxf54s49zb76</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>899a4de3-45f3-4740-9178-f5c56433fac6_ttxf54s49zb76!App</RegisteredUserModeAppID>
     <RegisteredPackageID>899a4de3-45f3-4740-9178-f5c56433fac6</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-12-17T09:19:58.338</Modified>
+      <Modified>2021-01-28T15:14:45.869</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Machine_APP.exe">
       <PackagePath>entrypoint\Machine_APP.exe</PackagePath>
-      <Modified>2020-12-17T09:19:57.629</Modified>
+      <Modified>2021-01-28T15:14:45.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\yijun\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -202,6 +202,10 @@
       <PackagePath>PIC\new.jpg</PackagePath>
       <Modified>2020-11-25T02:02:09.804</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\noimage.jpg">
+      <PackagePath>PIC\noimage.jpg</PackagePath>
+      <Modified>2021-01-28T06:02:38.710</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\pay.jpg">
       <PackagePath>PIC\pay.jpg</PackagePath>
       <Modified>2020-07-13T23:03:18.850</Modified>
@@ -280,11 +284,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\buy1.png">
       <PackagePath>PIC\buy1.png</PackagePath>
-      <Modified>2020-12-17T07:32:00.185</Modified>
+      <Modified>2020-12-17T07:34:08.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\car1.png">
       <PackagePath>PIC\car1.png</PackagePath>
-      <Modified>2020-12-17T07:28:18.429</Modified>
+      <Modified>2020-12-17T14:33:56.793</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\PIC\cardrecharge.png">
       <PackagePath>PIC\cardrecharge.png</PackagePath>
@@ -734,47 +738,55 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Machine_APP.xr.xml">
       <PackagePath>Machine_APP.xr.xml</PackagePath>
-      <Modified>2020-12-17T04:29:53.925</Modified>
+      <Modified>2021-01-28T15:10:07.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.336</Modified>
+      <Modified>2021-01-28T15:14:44.978</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\AppConfig.xbf">
+      <PackagePath>AppConfig.xbf</PackagePath>
+      <Modified>2021-01-28T15:14:44.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\App_sys_config.xbf">
       <PackagePath>App_sys_config.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.300</Modified>
+      <Modified>2021-01-28T15:14:44.943</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\BuyMain.xbf">
       <PackagePath>BuyMain.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.336</Modified>
+      <Modified>2021-01-28T15:14:44.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\CarMain.xbf">
       <PackagePath>CarMain.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.336</Modified>
+      <Modified>2021-01-28T15:14:44.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.312</Modified>
+      <Modified>2021-01-28T15:14:44.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\MyCar.xbf">
       <PackagePath>MyCar.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.327</Modified>
+      <Modified>2021-01-28T15:14:44.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\MyPay.xbf">
       <PackagePath>MyPay.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.336</Modified>
+      <Modified>2021-01-28T15:14:44.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\MyVideos.xbf">
       <PackagePath>MyVideos.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.336</Modified>
+      <Modified>2021-01-28T15:14:44.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\ProductEdit.xbf">
       <PackagePath>ProductEdit.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.337</Modified>
+      <Modified>2021-01-28T15:14:44.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\ProductEditbysingle.xbf">
       <PackagePath>ProductEditbysingle.xbf</PackagePath>
-      <Modified>2020-12-17T09:19:57.336</Modified>
+      <Modified>2021-01-28T15:14:44.977</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Shelves_edit.xbf">
+      <PackagePath>Shelves_edit.xbf</PackagePath>
+      <Modified>2021-01-28T15:14:44.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -782,11 +794,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-12-17T07:32:57.550</Modified>
+      <Modified>2021-01-28T15:10:08.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Core\Machine_APP.exe">
       <PackagePath>Machine_APP.exe</PackagePath>
-      <Modified>2020-12-17T09:19:58.333</Modified>
+      <Modified>2021-01-28T15:14:45.865</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

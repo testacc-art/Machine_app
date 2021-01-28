@@ -10,7 +10,7 @@ namespace Machine_APP.model
     [JsonObject(MemberSerialization.OptOut)]
     public class pay_info
     {
-        public pay_info(string payType, string payNo, string createDate, string creator, List<pay_infor_detail> mPayDetailList, string machineCode, int isPayComplated, int outSaleNum, int isFinishSale, int payAmount, float changeAmount, int cashGenerateStatus, float cashAmount, float returnAmount, float returnNum)
+        public pay_info(string payType, string payNo, string createDate, string creator, List<pay_infor_detail> mPayDetailList, string machineCode, int isPayComplated, int outSaleNum, int isFinishSale, float payAmount, float changeAmount, int cashGenerateStatus, float cashAmount, float returnAmount, float returnNum)
         {
             PayType = payType;
             PayNo = payNo;
@@ -38,7 +38,7 @@ namespace Machine_APP.model
         public int IsPayComplated { get; set; }
         public int OutSaleNum { get; set; }
         public int IsFinishSale { get; set; }
-        public int PayAmount { get; set; }
+        public float PayAmount { get; set; }
         public float ChangeAmount { get; set; }
         public int CashGenerateStatus { get; set; }
         public float CashAmount { get; set; }

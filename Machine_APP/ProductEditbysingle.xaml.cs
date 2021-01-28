@@ -86,6 +86,9 @@ namespace Machine_APP
             }
             catch (Exception ex)
             {
+                Log_dal ld = new Log_dal();
+                ld.addLog(0, "PostHttpstringrequest_alipay  Error:" + ex.Message, DateTime.Now.ToString(), "");
+
                 var dialog = new ContentDialog()
                 {
                     Title = "报错提示",
@@ -186,6 +189,9 @@ namespace Machine_APP
             }
             catch (Exception ex)
             {
+                Log_dal ld = new Log_dal();
+                ld.addLog(0, "but_save_Click_1  Error:" + ex.Message, DateTime.Now.ToString(), "");
+
                 var dialog = new ContentDialog()
                 {
                     Title = "报错提示",

@@ -11,37 +11,43 @@
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"/>
-            <RowDefinition Height="95*"/>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
         <Grid x:ConnectionId='2' Name="grid_2" Grid.Row="0" >
-            <Button x:ConnectionId='15' Name="but_new"  Width="50" Height="50" HorizontalAlignment="right"                        >
+            <Button x:ConnectionId='16' Name="but_backup"  Width="50" Height="50" HorizontalAlignment="left"                           >
+                <Button.Background>
+                    <ImageBrush ImageSource="/PIC/backup.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:ConnectionId='17' Name="but_new"  Width="50" Height="50" HorizontalAlignment="right"                        >
                 <Button.Background>
                     <ImageBrush ImageSource="/PIC/new.jpg"/>
                 </Button.Background>
             </Button>
         </Grid>
         <Grid x:ConnectionId='3' Name="grid_1" Grid.Row="1" >
-            <GridView x:ConnectionId='4'                                 Margin="0,50,0,0" Name="GridView1">
+            <GridView x:ConnectionId='5'                                 Margin="0,50,0,0" Name="GridView1">
                 <GridView.ItemTemplate>
                     <DataTemplate                           >
-                        <Border x:ConnectionId='6'  BorderBrush="AntiqueWhite" BorderThickness="5" Width="720" >
+                        <Border x:ConnectionId='7'  BorderBrush="AntiqueWhite" BorderThickness="5" Width="720" >
                             <StackPanel Orientation="Horizontal" Width="700" HorizontalAlignment="Left" >
-                                <TextBlock x:ConnectionId='7' FontSize="24" Width="150"                              VerticalAlignment="Center" Visibility="Collapsed" />
                                 <TextBlock x:ConnectionId='8' FontSize="24" Width="150"                              VerticalAlignment="Center" Visibility="Collapsed" />
-                                <TextBox x:ConnectionId='9' FontSize="24" Width="250"                              VerticalAlignment="Center"/>
-                                <TextBox x:ConnectionId='10' FontSize="24" Width="150"                        VerticalAlignment="Center"/>
-                                <TextBox x:ConnectionId='11' Width="150" FontSize="24"                              VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"/>
-                                <Button x:ConnectionId='12' Name="but_sub"   Width="50" Height="50"  HorizontalAlignment="Right"                       >
+                                <TextBlock x:ConnectionId='9' FontSize="24" Width="150"                              VerticalAlignment="Center" Visibility="Collapsed" />
+                                <TextBox x:ConnectionId='10' FontSize="24" Width="250"                              VerticalAlignment="Center"/>
+                                <TextBox x:ConnectionId='11' FontSize="24" Width="150"                        VerticalAlignment="Center"/>
+                                <TextBox x:ConnectionId='12' Width="150" FontSize="24"                              VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"/>
+                                <Button x:ConnectionId='13' Name="but_sub"   Width="50" Height="50"  HorizontalAlignment="Right"                        >
                                     <Button.Background>
                                         <ImageBrush Stretch="Fill" ImageSource="PIC/checked.png"/>
                                     </Button.Background>
                                 </Button>
-                                <Button x:ConnectionId='13'   Width="50" Height="50"  HorizontalAlignment="Right" Name="but_edit"                       >
+                                <Button x:ConnectionId='14'   Width="50" Height="50"  HorizontalAlignment="Right" Name="but_edit"                       >
                                     <Button.Background>
                                         <ImageBrush Stretch="Fill" ImageSource="PIC/update.png"/>
                                     </Button.Background>
                                 </Button>
-                                <Button x:ConnectionId='14'  Name="but_clear"  Width="50" Height="50"  HorizontalAlignment="Right"                         >
+                                <Button x:ConnectionId='15'  Name="but_clear"  Width="50" Height="50"  HorizontalAlignment="Right"                         >
                                     <Button.Background>
                                         <ImageBrush Stretch="Fill" ImageSource="PIC/clear.png"/>
                                     </Button.Background>
@@ -52,7 +58,14 @@
                 </GridView.ItemTemplate>
             </GridView>
         </Grid>
+        <Grid  Grid.Row="2" Grid.ColumnSpan="2">
+            <Button x:ConnectionId='4' Name="but_back"     HorizontalAlignment="left" VerticalAlignment="Center" Height="80" Width="80"                         >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="PIC/left1.png"/>
+                </Button.Background>
+            </Button>
 
+        </Grid>
     </Grid>
 
 </Page>

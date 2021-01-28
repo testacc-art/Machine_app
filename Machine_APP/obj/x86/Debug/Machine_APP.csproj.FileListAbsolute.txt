@@ -617,3 +617,13 @@ E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\SQLitePCL.Ext.pri.xml
 E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\ProjectArchitectures.txt
 E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112318540000000.json
 E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\Machine_APP.csprojAssemblyReference.cache
+E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\AppConfig.xbf
+E:\开发文件\Machine_APP\Machine_APP\bin\x86\Debug\Shelves_edit.xbf
+E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\AppConfig.g.i.cs
+E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\AppConfig.g.cs
+E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\Shelves_edit.g.i.cs
+E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\Shelves_edit.g.cs
+E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\AppConfig.xaml
+E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\Shelves_edit.xaml
+E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\AppConfig.xbf
+E:\开发文件\Machine_APP\Machine_APP\obj\x86\Debug\Shelves_edit.xbf

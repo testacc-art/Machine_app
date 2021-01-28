@@ -160,5 +160,21 @@ namespace Machine_APP.dal
                 throw ex;
             }
         }
+
+
+        public void deleteAllproduct()
+        {
+            try
+            {
+                string sql = "delete from APP_PRODUCT";
+                DBhelp db = new DBhelp();
+                db.UpdateRow(sql);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
     }
 }

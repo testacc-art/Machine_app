@@ -9,26 +9,37 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
             <RowDefinition Height="95*"/>
             <RowDefinition Height="5*"/>
+           
         </Grid.RowDefinitions>
-        <Grid x:ConnectionId='2' Name="grid_1" Grid.Row="0" >
+        <Grid Grid.Row="0" >
+            <StackPanel Orientation="Horizontal" Width="650" HorizontalAlignment="Left">
+                <TextBlock  FontSize="24" Width="200" Text="总数" VerticalAlignment="Center"/>
+                <TextBlock x:ConnectionId='13' Name ="ordernum"  FontSize="24" Width="200" Text="0" VerticalAlignment="Center" />
+                <TextBlock FontSize="24" Width="200" Text="总金额" VerticalAlignment="Center"/>
+                <TextBlock x:ConnectionId='14' Name ="orderamount"  FontSize="24" Width="200" Text="0" VerticalAlignment="Center" />
+            </StackPanel>
+        </Grid>
+        <Grid x:ConnectionId='2' Name="grid_1" Grid.Row="1" >
             <GridView x:ConnectionId='5'                                Margin="0,50,0,0" Name="GridView1">
                 <GridView.ItemTemplate>
                     <DataTemplate                               >
-                        <Border x:ConnectionId='7'  BorderBrush="DeepSkyBlue" BorderThickness="5" Width="700" >
+                        <Border x:ConnectionId='7'  BorderBrush="DeepSkyBlue" BorderThickness="5" Width="650" >
                             <StackPanel Orientation="Horizontal" Width="700" HorizontalAlignment="Left" >
                                 <Image x:ConnectionId='8' Width="150"                                />
                                 <TextBlock x:ConnectionId='9' FontSize="24" Width="200"                              VerticalAlignment="Center"/>
-                                <TextBlock x:ConnectionId='10' FontSize="24" Width="150"                            VerticalAlignment="Center"/>
+                                <!--<TextBlock FontSize="24" Width="50" Text="{x:Bind PayAmount1}" VerticalAlignment="Center"/>-->
+                                <!--<TextBlock FontSize="24" Width="50" Text="元" VerticalAlignment="Center"/>-->
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                                    <Button x:ConnectionId='11'   Width="50" Height="50"  Name="but_min"                      >
+                                    <Button x:ConnectionId='10'   Width="50" Height="50"  Name="but_min"                      >
                                         <Button.Background>
                                             <ImageBrush Stretch="Fill" ImageSource="PIC/minus.png"/>
                                         </Button.Background>
                                     </Button>
-                                    <TextBlock x:ConnectionId='12' Width="50" FontSize="24"                         VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"/>
-                                    <Button x:ConnectionId='13'   Width="50" Height="50" Name="but_add"                        >
+                                    <TextBlock x:ConnectionId='11' Width="50" FontSize="24"                         VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"/>
+                                    <Button x:ConnectionId='12'   Width="50" Height="50" Name="but_add"                        >
                                         <Button.Background>
                                             <ImageBrush Stretch="Fill" ImageSource="PIC/add.png"/>
                                         </Button.Background>
@@ -41,9 +52,8 @@
                 </GridView.ItemTemplate>
             </GridView>
         </Grid>
-        <Grid  Grid.Row="1">
-            <Grid Grid.Row="2"  >
-            </Grid>
+        <Grid  Grid.Row="2">
+            
             <StackPanel Grid.Row="2"  HorizontalAlignment="Center"  Orientation="Horizontal" VerticalAlignment="Stretch">
                 <Button x:ConnectionId='3'  Height="65" Width="173" HorizontalAlignment="Left" Name="but_back"                        >
                     <Button.Background>

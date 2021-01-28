@@ -9,7 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-       
         <StackPanel Orientation="Vertical" Width="700">
             <StackPanel Orientation="Vertical" Width="500" Height="30">
             </StackPanel>
