@@ -13,4 +13,4 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
     - name: Build AppInstaller
       run: |
-        MSBuild /Machine_APP /p:Configuration=Release /p:UapAppxPackageBuildMode="SideloadOnly" /p:AppxPackageSigningEnabled=true /p:PackageCertificateThumbprint="" /p:PackageCertificateKeyFile="Machine_APP/Machine_APP_TemporaryKey.pfx" /p:GenerateAppInstallerFile=True /p:AppInstallerUri="https://demo.demo/"
+        MSBuild /p:Configuration=Release /p:UapAppxPackageBuildMode="SideloadOnly" /p:AppxPackageSigningEnabled=true /p:PackageCertificateThumbprint="" /p:PackageCertificateKeyFile="Machine_APP/Machine_APP_TemporaryKey.pfx" /p:GenerateAppInstallerFile=True /p:AppInstallerUri="https://demo.demo/"
